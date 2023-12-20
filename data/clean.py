@@ -49,12 +49,17 @@ movies_val['img_path'] = movies_val.index.map(lambda x: '../dataset/images/' + s
 movies_test['img_path'] = movies_test.index.map(lambda x: '../dataset/images/' + str(x) + '.jpg')
 print('Add img_path column done')
 
+# clean 2 minor data userRating and users
+ratings.drop(columns=['timestamp'], inplace=True)
+users.drop(columns=['zip','occupation'], inplace=True)
 
 # write to csv 
 movies_train.to_csv('../dataset/movies_train.csv')
 movies_val.to_csv('../dataset/movies_val.csv')
 movies_test.to_csv('../dataset/movies_test.csv')
 
+ratings.to_csv('../dataset/ratings.csv')
+users.to_csv('../dataset/users.csv')
 print('Title cleaned and saved to csv')
 
 # drop every row with no poster
