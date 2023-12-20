@@ -1,0 +1,778 @@
+movieid,title,genre,img_path
+3397,the great muppet caper,"[""Children's"", 'Comedy']",../dataset/posters/3397.jpg
+2067,doctor zhivago,"['Drama', 'Romance', 'War']",../dataset/posters/2067.jpg
+2651,frankenstein meets the wolf man,['Horror'],../dataset/posters/2651.jpg
+2989,for your eyes only,['Action'],../dataset/posters/2989.jpg
+3415,the mirror,['Drama'],../dataset/posters/3415.jpg
+576,fausto,['Comedy'],../dataset/posters/576.jpg
+382,wolf,"['Drama', 'Horror']",../dataset/posters/382.jpg
+1927,all quiet on the western front,['War'],../dataset/posters/1927.jpg
+645,nelly & monsieur arnaud,['Drama'],../dataset/posters/645.jpg
+3532,freedom for us,['Comedy'],../dataset/posters/3532.jpg
+1747,wag the dog,"['Comedy', 'Drama']",../dataset/posters/1747.jpg
+3418,thelma & louise,"['Action', 'Drama']",../dataset/posters/3418.jpg
+1450,prisoner of the mountains,['War'],../dataset/posters/1450.jpg
+1083,the great race,"['Comedy', 'Musical']",../dataset/posters/1083.jpg
+3330,splendor in the grass,['Drama'],../dataset/posters/3330.jpg
+3900,crime and punishment in suburbia,"['Comedy', 'Drama']",../dataset/posters/3900.jpg
+1120,the people vs. larry flynt,['Drama'],../dataset/posters/1120.jpg
+132,jade,['Thriller'],../dataset/posters/132.jpg
+1865,wild man blues,['Documentary'],../dataset/posters/1865.jpg
+1147,when we were kings,['Documentary'],../dataset/posters/1147.jpg
+1246,dead poets society,['Drama'],../dataset/posters/1246.jpg
+1118,tashunga,"['Adventure', 'Western']",../dataset/posters/1118.jpg
+3432,death wish 3,"['Action', 'Drama']",../dataset/posters/3432.jpg
+2506,the other sister,"['Comedy', 'Drama', 'Romance']",../dataset/posters/2506.jpg
+2158,"henry: portrait of a serial killer, part 2","['Crime', 'Horror']",../dataset/posters/2158.jpg
+2417,heartburn,"['Comedy', 'Drama']",../dataset/posters/2417.jpg
+111,taxi driver,"['Drama', 'Thriller']",../dataset/posters/111.jpg
+1407,scream,"['Horror', 'Thriller']",../dataset/posters/1407.jpg
+3363,american graffiti,"['Comedy', 'Drama']",../dataset/posters/3363.jpg
+3375,destination moon,['Sci-Fi'],../dataset/posters/3375.jpg
+2798,problem child,['Comedy'],../dataset/posters/2798.jpg
+600,love and a .45,['Thriller'],../dataset/posters/600.jpg
+3300,pitch black,"['Action', 'Sci-Fi']",../dataset/posters/3300.jpg
+1572,contempt,['Drama'],../dataset/posters/1572.jpg
+1010,the love bug,"[""Children's"", 'Comedy']",../dataset/posters/1010.jpg
+1494,the sixth man,['Comedy'],../dataset/posters/1494.jpg
+2995,the house on haunted hill,['Horror'],../dataset/posters/2995.jpg
+559,"paris, france",['Comedy'],../dataset/posters/559.jpg
+2311,2010,"['Mystery', 'Sci-Fi']",../dataset/posters/2311.jpg
+157,canadian bacon,"['Comedy', 'War']",../dataset/posters/157.jpg
+765,jack,"['Comedy', 'Drama']",../dataset/posters/765.jpg
+1755,shooting fish,['Romance'],../dataset/posters/1755.jpg
+1179,the grifters,"['Crime', 'Drama', 'Film-Noir']",../dataset/posters/1179.jpg
+498,mr. jones,"['Drama', 'Romance']",../dataset/posters/498.jpg
+3076,irma la douce,['Comedy'],../dataset/posters/3076.jpg
+2553,village of the damned,"['Horror', 'Sci-Fi', 'Thriller']",../dataset/posters/2553.jpg
+3309,a dog's life,['Comedy'],../dataset/posters/3309.jpg
+1350,the omen,['Horror'],../dataset/posters/1350.jpg
+1557,squeeze,['Drama'],../dataset/posters/1557.jpg
+2952,hard 8,"['Crime', 'Thriller']",../dataset/posters/2952.jpg
+1348,nosferatu,['Horror'],../dataset/posters/1348.jpg
+3106,come see the paradise,"['Drama', 'Romance']",../dataset/posters/3106.jpg
+28,persuasion,['Romance'],../dataset/posters/28.jpg
+2144,sixteen candles,['Comedy'],../dataset/posters/2144.jpg
+535,short cuts,['Drama'],../dataset/posters/535.jpg
+1577,mondo,['Drama'],../dataset/posters/1577.jpg
+485,last action hero,"['Action', 'Comedy']",../dataset/posters/485.jpg
+3256,patriot games,"['Action', 'Thriller']",../dataset/posters/3256.jpg
+1201,"the good, the bad and the ugly","['Action', 'Western']",../dataset/posters/1201.jpg
+340,the war,"['Adventure', 'Drama']",../dataset/posters/340.jpg
+878,bye-bye,['Drama'],../dataset/posters/878.jpg
+1388,jaws 2,"['Action', 'Horror']",../dataset/posters/1388.jpg
+634,theodore rex,['Comedy'],../dataset/posters/634.jpg
+3316,reindeer games,"['Action', 'Thriller']",../dataset/posters/3316.jpg
+483,king of the hill,['Drama'],../dataset/posters/483.jpg
+3018,re-animator,['Horror'],../dataset/posters/3018.jpg
+3011,"they shoot horses, don't they?",['Drama'],../dataset/posters/3011.jpg
+1537,shall we dance?,['Comedy'],../dataset/posters/1537.jpg
+48,pocahontas,"['Animation', ""Children's"", 'Musical', 'Romance']",../dataset/posters/48.jpg
+760,stalingrad,['War'],../dataset/posters/760.jpg
+2893,plunkett & macleane,"['Action', 'Drama']",../dataset/posters/2893.jpg
+835,foxfire,['Drama'],../dataset/posters/835.jpg
+1759,four days in september,['Drama'],../dataset/posters/1759.jpg
+550,threesome,"['Comedy', 'Romance']",../dataset/posters/550.jpg
+958,lady of burlesque,"['Comedy', 'Mystery']",../dataset/posters/958.jpg
+2030,east palace west palace,['Drama'],../dataset/posters/2030.jpg
+821,the crude oasis,['Romance'],../dataset/posters/821.jpg
+2773,alice and martin,['Drama'],../dataset/posters/2773.jpg
+2048,the great mouse detective,"['Animation', ""Children's""]",../dataset/posters/2048.jpg
+1940,gentleman's agreement,['Drama'],../dataset/posters/1940.jpg
+1526,fathers' day,['Comedy'],../dataset/posters/1526.jpg
+78,the crossing guard,['Drama'],../dataset/posters/78.jpg
+1159,love in bloom,['Romance'],../dataset/posters/1159.jpg
+2761,the iron giant,"['Animation', ""Children's""]",../dataset/posters/2761.jpg
+218,boys on the side,"['Comedy', 'Drama']",../dataset/posters/218.jpg
+2463,ruthless people,['Comedy'],../dataset/posters/2463.jpg
+1934,you can't take it with you,['Comedy'],../dataset/posters/1934.jpg
+424,blue chips,['Drama'],../dataset/posters/424.jpg
+1644,i know what you did last summer,"['Horror', 'Mystery', 'Thriller']",../dataset/posters/1644.jpg
+3701,alien nation,"['Crime', 'Drama', 'Sci-Fi']",../dataset/posters/3701.jpg
+3039,trading places,['Comedy'],../dataset/posters/3039.jpg
+3613,things change,['Comedy'],../dataset/posters/3613.jpg
+3567,bossa nova,['Comedy'],../dataset/posters/3567.jpg
+3237,kestrel's eye,['Documentary'],../dataset/posters/3237.jpg
+984,the pompatus of love,"['Comedy', 'Drama']",../dataset/posters/984.jpg
+3848,silent fall,"['Drama', 'Thriller']",../dataset/posters/3848.jpg
+2541,cruel intentions,['Drama'],../dataset/posters/2541.jpg
+257,just cause,"['Mystery', 'Thriller']",../dataset/posters/257.jpg
+1947,west side story,"['Musical', 'Romance']",../dataset/posters/1947.jpg
+2728,spartacus,['Drama'],../dataset/posters/2728.jpg
+3180,play it to the bone,"['Comedy', 'Drama']",../dataset/posters/3180.jpg
+2955,penitentiary ii,['Drama'],../dataset/posters/2955.jpg
+1324,amityville: dollhouse,['Horror'],../dataset/posters/1324.jpg
+3086,march of the wooden soldiers,['Comedy'],../dataset/posters/3086.jpg
+2558,forces of nature,"['Comedy', 'Romance']",../dataset/posters/2558.jpg
+3462,modern times,['Comedy'],../dataset/posters/3462.jpg
+3834,bronco billy,"['Adventure', 'Drama', 'Romance']",../dataset/posters/3834.jpg
+296,pulp fiction,"['Crime', 'Drama']",../dataset/posters/296.jpg
+1670,welcome to sarajevo,"['Drama', 'War']",../dataset/posters/1670.jpg
+3721,trixie,['Comedy'],../dataset/posters/3721.jpg
+1164,two or three things i know about her,['Drama'],../dataset/posters/1164.jpg
+390,faster pussycat! kill! kill!,"['Action', 'Comedy', 'Drama']",../dataset/posters/390.jpg
+1538,the second jungle book: mowgli & baloo,"['Adventure', ""Children's""]",../dataset/posters/1538.jpg
+324,the sum of us,['Comedy'],../dataset/posters/324.jpg
+3893,nurse betty,"['Comedy', 'Thriller']",../dataset/posters/3893.jpg
+2551,dead ringers,"['Drama', 'Thriller']",../dataset/posters/2551.jpg
+1488,the devil's own,"['Action', 'Drama', 'Thriller', 'War']",../dataset/posters/1488.jpg
+2934,a love bewitched,['Musical'],../dataset/posters/2934.jpg
+3016,creepshow,['Horror'],../dataset/posters/3016.jpg
+1223,a grand day out,"['Animation', 'Comedy']",../dataset/posters/1223.jpg
+3486,devil girl from mars,['Sci-Fi'],../dataset/posters/3486.jpg
+3354,mission to mars,['Sci-Fi'],../dataset/posters/3354.jpg
+893,mother night,['Drama'],../dataset/posters/893.jpg
+58,il postino,"['Drama', 'Romance']",../dataset/posters/58.jpg
+2063,seventh heaven,"['Drama', 'Romance']",../dataset/posters/2063.jpg
+3288,cotton mary,['Drama'],../dataset/posters/3288.jpg
+611,hellraiser: bloodline,"['Action', 'Horror', 'Sci-Fi']",../dataset/posters/611.jpg
+2060,baseketball,['Comedy'],../dataset/posters/2060.jpg
+3706,angel heart,"['Film-Noir', 'Mystery', 'Thriller']",../dataset/posters/3706.jpg
+1720,time tracers,"['Action', 'Adventure', 'Sci-Fi']",../dataset/posters/1720.jpg
+131,frankie starlight,"['Drama', 'Romance']",../dataset/posters/131.jpg
+125,flirting with disaster,['Comedy'],../dataset/posters/125.jpg
+330,tales from the hood,"['Comedy', 'Horror']",../dataset/posters/330.jpg
+1168,bad moon,['Horror'],../dataset/posters/1168.jpg
+446,farewell my concubine,"['Drama', 'Romance']",../dataset/posters/446.jpg
+1869,black dog,"['Action', 'Thriller']",../dataset/posters/1869.jpg
+1699,the butcher boy,['Drama'],../dataset/posters/1699.jpg
+1025,the sword in the stone,"['Animation', ""Children's""]",../dataset/posters/1025.jpg
+1925,wings,"['Drama', 'Romance', 'War']",../dataset/posters/1925.jpg
+2597,lost & found,"['Comedy', 'Romance']",../dataset/posters/2597.jpg
+991,michael collins,"['Drama', 'War']",../dataset/posters/991.jpg
+3630,the house of exorcism,['Horror'],../dataset/posters/3630.jpg
+1777,the wedding singer,"['Comedy', 'Romance']",../dataset/posters/1777.jpg
+3597,whipped,['Comedy'],../dataset/posters/3597.jpg
+2335,the waterboy,['Comedy'],../dataset/posters/2335.jpg
+1049,the ghost and the darkness,"['Action', 'Adventure']",../dataset/posters/1049.jpg
+519,robocop 3,"['Sci-Fi', 'Thriller']",../dataset/posters/519.jpg
+268,little odessa,['Drama'],../dataset/posters/268.jpg
+3072,moonstruck,['Comedy'],../dataset/posters/3072.jpg
+3002,my best fiend,['Documentary'],../dataset/posters/3002.jpg
+1943,the greatest show on earth,['Drama'],../dataset/posters/1943.jpg
+2896,alvarez kelly,['Western'],../dataset/posters/2896.jpg
+239,a goofy movie,"['Animation', ""Children's"", 'Comedy', 'Romance']",../dataset/posters/239.jpg
+1708,ill gotten gains,['Drama'],../dataset/posters/1708.jpg
+1173,the cook the thief his wife & her lover,['Drama'],../dataset/posters/1173.jpg
+1141,hoogste tijd,['Drama'],../dataset/posters/1141.jpg
+3520,how to stuff a wild bikini,['Comedy'],../dataset/posters/3520.jpg
+459,the getaway,['Action'],../dataset/posters/459.jpg
+2682,limbo,['Drama'],../dataset/posters/2682.jpg
+250,heavyweights,"[""Children's"", 'Comedy']",../dataset/posters/250.jpg
+1661,switchback,['Thriller'],../dataset/posters/1661.jpg
+108,catwalk,['Documentary'],../dataset/posters/108.jpg
+988,grace of my heart,"['Comedy', 'Drama']",../dataset/posters/988.jpg
+1685,"i love you, i love you not",['Romance'],../dataset/posters/1685.jpg
+1819,storefront hitchcock,['Drama'],../dataset/posters/1819.jpg
+360,i love trouble,"['Action', 'Comedy']",../dataset/posters/360.jpg
+3930,the creature from the black lagoon,['Horror'],../dataset/posters/3930.jpg
+2777,cobra,['Drama'],../dataset/posters/2777.jpg
+3064,poison ivy: new seduction,['Thriller'],../dataset/posters/3064.jpg
+986,fly away home,"['Adventure', ""Children's""]",../dataset/posters/986.jpg
+994,big night,['Drama'],../dataset/posters/994.jpg
+3887,went to coney island on a mission from god... be back by five,['Drama'],../dataset/posters/3887.jpg
+775,spirits of the dead,['Horror'],../dataset/posters/775.jpg
+2819,three days of the condor,['Thriller'],../dataset/posters/2819.jpg
+321,strawberry and chocolate,['Drama'],../dataset/posters/321.jpg
+2823,the spiders,"['Action', 'Drama']",../dataset/posters/2823.jpg
+1609,187,['Drama'],../dataset/posters/1609.jpg
+3117,ride with the devil,"['Drama', 'Romance', 'War']",../dataset/posters/3117.jpg
+3498,midnight express,['Drama'],../dataset/posters/3498.jpg
+1951,oliver!,['Musical'],../dataset/posters/1951.jpg
+3619,the hollywood knights,['Comedy'],../dataset/posters/3619.jpg
+339,while you were sleeping,"['Comedy', 'Romance']",../dataset/posters/339.jpg
+2090,the rescuers,"['Animation', ""Children's""]",../dataset/posters/2090.jpg
+1826,barney's great adventure,"['Adventure', ""Children's""]",../dataset/posters/1826.jpg
+503,the new age,['Drama'],../dataset/posters/503.jpg
+2824,on the ropes,['Documentary'],../dataset/posters/2824.jpg
+1382,marked for death,"['Action', 'Drama']",../dataset/posters/1382.jpg
+1949,a man for all seasons,['Drama'],../dataset/posters/1949.jpg
+743,spy hard,['Comedy'],../dataset/posters/743.jpg
+141,the birdcage,['Comedy'],../dataset/posters/141.jpg
+3436,dying young,"['Drama', 'Romance']",../dataset/posters/3436.jpg
+2615,my science project,"['Adventure', 'Sci-Fi']",../dataset/posters/2615.jpg
+3263,white men can't jump,['Comedy'],../dataset/posters/3263.jpg
+1752,hard rain,"['Action', 'Thriller']",../dataset/posters/1752.jpg
+3052,dogma,['Comedy'],../dataset/posters/3052.jpg
+2578,the sticky fingers of time,['Sci-Fi'],../dataset/posters/2578.jpg
+475,in the name of the father,['Drama'],../dataset/posters/475.jpg
+2809,love stinks,['Comedy'],../dataset/posters/2809.jpg
+3823,wonderland,['Drama'],../dataset/posters/3823.jpg
+1844,live flesh,['Drama'],../dataset/posters/1844.jpg
+2878,hell night,['Horror'],../dataset/posters/2878.jpg
+1788,men with guns,"['Action', 'Drama']",../dataset/posters/1788.jpg
+1272,patton,"['Drama', 'War']",../dataset/posters/1272.jpg
+1071,for the moment,"['Romance', 'War']",../dataset/posters/1071.jpg
+2062,the governess,"['Drama', 'Romance']",../dataset/posters/2062.jpg
+403,two crimes,"['Comedy', 'Crime', 'Drama']",../dataset/posters/403.jpg
+150,apollo 13,['Drama'],../dataset/posters/150.jpg
+2365,king kong vs. godzilla,"['Action', 'Sci-Fi']",../dataset/posters/2365.jpg
+172,johnny mnemonic,"['Action', 'Sci-Fi', 'Thriller']",../dataset/posters/172.jpg
+2359,waking ned devine,['Comedy'],../dataset/posters/2359.jpg
+1021,angels in the outfield,"[""Children's"", 'Comedy']",../dataset/posters/1021.jpg
+2902,psycho ii,"['Horror', 'Thriller']",../dataset/posters/2902.jpg
+1608,air force one,"['Action', 'Thriller']",../dataset/posters/1608.jpg
+1462,unforgotten: twenty-five years after willowbrook,['Documentary'],../dataset/posters/1462.jpg
+3077,42 up,['Documentary'],../dataset/posters/3077.jpg
+8,tom and huck,"['Adventure', ""Children's""]",../dataset/posters/8.jpg
+1979,friday the 13th part vi: jason lives,['Horror'],../dataset/posters/1979.jpg
+3175,galaxy quest,"['Adventure', 'Comedy', 'Sci-Fi']",../dataset/posters/3175.jpg
+26,othello,['Drama'],../dataset/posters/26.jpg
+313,the swan princess,"['Animation', ""Children's""]",../dataset/posters/313.jpg
+1845,zero effect,"['Comedy', 'Thriller']",../dataset/posters/1845.jpg
+3655,blow-out,['Drama'],../dataset/posters/3655.jpg
+3279,knockout,"['Action', 'Adventure']",../dataset/posters/3279.jpg
+278,miami rhapsody,['Comedy'],../dataset/posters/278.jpg
+200,the tie that binds,['Thriller'],../dataset/posters/200.jpg
+703,boys,['Drama'],../dataset/posters/703.jpg
+2831,a dog of flanders,['Drama'],../dataset/posters/2831.jpg
+2668,swamp thing,"['Horror', 'Sci-Fi']",../dataset/posters/2668.jpg
+374,richie rich,"[""Children's"", 'Comedy']",../dataset/posters/374.jpg
+2811,with friends like these...,['Comedy'],../dataset/posters/2811.jpg
+2758,plenty,['Drama'],../dataset/posters/2758.jpg
+1008,"davy crockett, king of the wild frontier",['Western'],../dataset/posters/1008.jpg
+2364,godzilla,"['Action', 'Sci-Fi']",../dataset/posters/2364.jpg
+940,the adventures of robin hood,"['Action', 'Adventure']",../dataset/posters/940.jpg
+1877,little men,['Drama'],../dataset/posters/1877.jpg
+2717,ghostbusters ii,"['Comedy', 'Horror']",../dataset/posters/2717.jpg
+3250,alive,['Drama'],../dataset/posters/3250.jpg
+2428,the faculty,"['Horror', 'Sci-Fi']",../dataset/posters/2428.jpg
+732,original gangstas,['Crime'],../dataset/posters/732.jpg
+127,the silence of the palace,['Drama'],../dataset/posters/127.jpg
+3085,the living dead girl,['Horror'],../dataset/posters/3085.jpg
+231,dumb & dumber,['Comedy'],../dataset/posters/231.jpg
+2822,medicine man,"['Adventure', 'Romance']",../dataset/posters/2822.jpg
+1936,mrs. miniver,"['Drama', 'War']",../dataset/posters/1936.jpg
+2210,sabotage,['Thriller'],../dataset/posters/2210.jpg
+1408,the last of the mohicans,"['Action', 'Romance', 'War']",../dataset/posters/1408.jpg
+3935,kronos,['Horror'],../dataset/posters/3935.jpg
+3144,the glass bottom boat,"['Comedy', 'Romance']",../dataset/posters/3144.jpg
+3553,gossip,"['Drama', 'Thriller']",../dataset/posters/3553.jpg
+873,shadow of angels,['Drama'],../dataset/posters/873.jpg
+3933,the killer shrews,"['Horror', 'Sci-Fi']",../dataset/posters/3933.jpg
+2171,"next stop, wonderland","['Comedy', 'Drama', 'Romance']",../dataset/posters/2171.jpg
+1996,poltergeist iii,"['Horror', 'Thriller']",../dataset/posters/1996.jpg
+2851,saturn 3,"['Adventure', 'Sci-Fi', 'Thriller']",../dataset/posters/2851.jpg
+3530,smoking/no smoking,['Comedy'],../dataset/posters/3530.jpg
+3500,mr. saturday night,"['Comedy', 'Drama']",../dataset/posters/3500.jpg
+3065,ten benny,['Drama'],../dataset/posters/3065.jpg
+683,the eye of vichy,['Documentary'],../dataset/posters/683.jpg
+3214,american flyers,['Drama'],../dataset/posters/3214.jpg
+888,land before time iii: the time of the great giving,"['Animation', ""Children's""]",../dataset/posters/888.jpg
+300,quiz show,['Drama'],../dataset/posters/300.jpg
+3454,whatever it takes,"['Comedy', 'Romance']",../dataset/posters/3454.jpg
+3691,private school,['Comedy'],../dataset/posters/3691.jpg
+580,princess caraboo,['Drama'],../dataset/posters/580.jpg
+175,kids,['Drama'],../dataset/posters/175.jpg
+2641,superman ii,"['Action', 'Adventure', 'Sci-Fi']",../dataset/posters/2641.jpg
+3826,hollow man,"['Horror', 'Sci-Fi', 'Thriller']",../dataset/posters/3826.jpg
+2242,"grandview, u.s.a.",['Drama'],../dataset/posters/2242.jpg
+77,nico icon,['Documentary'],../dataset/posters/77.jpg
+3804,h.o.t.s.,['Comedy'],../dataset/posters/3804.jpg
+2319,reach the rock,['Comedy'],../dataset/posters/2319.jpg
+282,nell,['Drama'],../dataset/posters/282.jpg
+238,far from home: the adventures of yellow dog,"['Adventure', ""Children's""]",../dataset/posters/238.jpg
+3268,stop! or my mom will shoot,"['Action', 'Comedy']",../dataset/posters/3268.jpg
+472,i'll do anything,"['Comedy', 'Drama']",../dataset/posters/472.jpg
+3068,the verdict,['Drama'],../dataset/posters/3068.jpg
+3177,next friday,['Comedy'],../dataset/posters/3177.jpg
+99,heidi fleiss: hollywood madam,['Documentary'],../dataset/posters/99.jpg
+2789,damien: omen ii,['Horror'],../dataset/posters/2789.jpg
+1631,the assignment,['Thriller'],../dataset/posters/1631.jpg
+3738,the sugarland express,['Drama'],../dataset/posters/3738.jpg
+2393,star trek: insurrection,"['Action', 'Sci-Fi']",../dataset/posters/2393.jpg
+631,all dogs go to heaven 2,"['Animation', ""Children's"", 'Musical']",../dataset/posters/631.jpg
+601,the wooden man's bride,['Drama'],../dataset/posters/601.jpg
+1139,everything relative,['Drama'],../dataset/posters/1139.jpg
+2404,rambo iii,"['Action', 'War']",../dataset/posters/2404.jpg
+2548,the rage: carrie 2,['Horror'],../dataset/posters/2548.jpg
+1896,cousin bette,['Comedy'],../dataset/posters/1896.jpg
+2412,rocky v,"['Action', 'Drama']",../dataset/posters/2412.jpg
+3499,misery,['Horror'],../dataset/posters/3499.jpg
+666,all things fair,['Drama'],../dataset/posters/666.jpg
+3185,snow falling on cedars,['Drama'],../dataset/posters/3185.jpg
+623,a modern affair,['Romance'],../dataset/posters/623.jpg
+2948,from russia with love,['Action'],../dataset/posters/2948.jpg
+343,the baby-sitters club,"[""Children's""]",../dataset/posters/343.jpg
+2091,return from witch mountain,"[""Children's"", 'Sci-Fi']",../dataset/posters/2091.jpg
+2330,hands on a hard body,['Documentary'],../dataset/posters/2330.jpg
+2584,foolish,['Comedy'],../dataset/posters/2584.jpg
+3652,city of the living dead,['Horror'],../dataset/posters/3652.jpg
+2259,blame it on rio,"['Comedy', 'Romance']",../dataset/posters/2259.jpg
+3859,the eyes of tammy faye,['Documentary'],../dataset/posters/3859.jpg
+2435,hurlyburly,['Drama'],../dataset/posters/2435.jpg
+1534,le bonheur,['Drama'],../dataset/posters/1534.jpg
+3450,grumpy old men,['Comedy'],../dataset/posters/3450.jpg
+1695,artemisia,['Drama'],../dataset/posters/1695.jpg
+38,it takes two,['Comedy'],../dataset/posters/38.jpg
+1433,the machine,"['Comedy', 'Horror']",../dataset/posters/1433.jpg
+3611,saludos amigos,"['Animation', ""Children's"", 'Comedy']",../dataset/posters/3611.jpg
+2540,the corruptor,"['Action', 'Crime', 'Drama', 'Thriller']",../dataset/posters/2540.jpg
+1857,the real blonde,['Comedy'],../dataset/posters/1857.jpg
+1893,beyond silence,['Drama'],../dataset/posters/1893.jpg
+3055,felicia's journey,['Thriller'],../dataset/posters/3055.jpg
+3218,poison,['Drama'],../dataset/posters/3218.jpg
+1365,ridicule,['Drama'],../dataset/posters/1365.jpg
+1209,once upon a time in the west,['Western'],../dataset/posters/1209.jpg
+3780,rocketship x-m,['Sci-Fi'],../dataset/posters/3780.jpg
+2201,the paradine case,['Drama'],../dataset/posters/2201.jpg
+3789,the pawnbroker,['Drama'],../dataset/posters/3789.jpg
+3367,the devil's brigade,['War'],../dataset/posters/3367.jpg
+3004,the bachelor,"['Comedy', 'Romance']",../dataset/posters/3004.jpg
+2320,apt pupil,"['Drama', 'Thriller']",../dataset/posters/2320.jpg
+105,the bridges of madison county,"['Drama', 'Romance']",../dataset/posters/105.jpg
+1270,back to the future,"['Comedy', 'Sci-Fi']",../dataset/posters/1270.jpg
+85,angels and insects,"['Drama', 'Romance']",../dataset/posters/85.jpg
+2785,tales of terror,['Horror'],../dataset/posters/2785.jpg
+746,force of evil,['Film-Noir'],../dataset/posters/746.jpg
+375,safe passage,['Drama'],../dataset/posters/375.jpg
+1667,mad city,"['Action', 'Drama']",../dataset/posters/1667.jpg
+3922,bikini beach,['Comedy'],../dataset/posters/3922.jpg
+2472,tough guys,['Comedy'],../dataset/posters/2472.jpg
+2774,better than chocolate,"['Comedy', 'Romance']",../dataset/posters/2774.jpg
+88,black sheep,['Comedy'],../dataset/posters/88.jpg
+2855,nightmares,['Horror'],../dataset/posters/2855.jpg
+3844,steel magnolias,['Drama'],../dataset/posters/3844.jpg
+877,girls town,['Drama'],../dataset/posters/877.jpg
+2138,watership down,"['Animation', ""Children's"", 'Drama', 'Fantasy']",../dataset/posters/2138.jpg
+1103,rebel without a cause,['Drama'],../dataset/posters/1103.jpg
+2672,the thirteenth floor,"['Drama', 'Sci-Fi', 'Thriller']",../dataset/posters/2672.jpg
+3183,the third miracle,['Drama'],../dataset/posters/3183.jpg
+1191,madonna: truth or dare,['Documentary'],../dataset/posters/1191.jpg
+2805,mickey blue eyes,"['Comedy', 'Romance']",../dataset/posters/2805.jpg
+2706,american pie,['Comedy'],../dataset/posters/2706.jpg
+3132,daddy long legs,['Comedy'],../dataset/posters/3132.jpg
+735,cemetery man,"['Comedy', 'Horror']",../dataset/posters/735.jpg
+1016,the shaggy dog,"[""Children's"", 'Comedy']",../dataset/posters/1016.jpg
+976,a farewell to arms,"['Romance', 'War']",../dataset/posters/976.jpg
+2909,"five wives, three secretaries and me",['Documentary'],../dataset/posters/2909.jpg
+2516,children of the corn iii,['Horror'],../dataset/posters/2516.jpg
+1483,crash,"['Drama', 'Thriller']",../dataset/posters/1483.jpg
+2159,henry: portrait of a serial killer,"['Crime', 'Horror']",../dataset/posters/2159.jpg
+2581,never been kissed,"['Comedy', 'Romance']",../dataset/posters/2581.jpg
+1997,the exorcist,['Horror'],../dataset/posters/1997.jpg
+1892,a perfect murder,"['Mystery', 'Thriller']",../dataset/posters/1892.jpg
+292,outbreak,"['Action', 'Drama', 'Thriller']",../dataset/posters/292.jpg
+2213,waltzes from vienna,"['Comedy', 'Musical']",../dataset/posters/2213.jpg
+1413,the whole wide world,['Drama'],../dataset/posters/1413.jpg
+128,jupiter's wife,['Documentary'],../dataset/posters/128.jpg
+1725,the education of little tree,['Drama'],../dataset/posters/1725.jpg
+1878,woo,"['Comedy', 'Romance']",../dataset/posters/1878.jpg
+209,white man's burden,['Drama'],../dataset/posters/209.jpg
+856,mille bolle blu,['Comedy'],../dataset/posters/856.jpg
+1479,the saint,"['Action', 'Romance', 'Thriller']",../dataset/posters/1479.jpg
+2027,mafia!,"['Comedy', 'Crime']",../dataset/posters/2027.jpg
+3633,on her majesty's secret service,['Action'],../dataset/posters/3633.jpg
+3822,the girl on the bridge,"['Drama', 'Romance']",../dataset/posters/3822.jpg
+3672,benji,"['Adventure', ""Children's""]",../dataset/posters/3672.jpg
+3452,romeo must die,"['Action', 'Romance']",../dataset/posters/3452.jpg
+1814,a price above rubies,['Drama'],../dataset/posters/1814.jpg
+3692,class of nuke 'em high,"['Comedy', 'Horror']",../dataset/posters/3692.jpg
+3861,the replacements,['Comedy'],../dataset/posters/3861.jpg
+1547,shiloh,"[""Children's"", 'Drama']",../dataset/posters/1547.jpg
+3028,the taming of the shrew,['Comedy'],../dataset/posters/3028.jpg
+2254,choices,['Drama'],../dataset/posters/2254.jpg
+1690,alien: resurrection,"['Action', 'Horror', 'Sci-Fi']",../dataset/posters/1690.jpg
+1122,plutonium circus,['Documentary'],../dataset/posters/1122.jpg
+753,a month by the lake,"['Comedy', 'Drama']",../dataset/posters/753.jpg
+813,larger than life,['Comedy'],../dataset/posters/813.jpg
+1332,the believers,"['Horror', 'Thriller']",../dataset/posters/1332.jpg
+2080,lady and the tramp,"['Animation', ""Children's"", 'Comedy', 'Musical', 'Romance']",../dataset/posters/2080.jpg
+2780,the raven,"['Comedy', 'Horror']",../dataset/posters/2780.jpg
+3471,close encounters of the third kind,"['Drama', 'Sci-Fi']",../dataset/posters/3471.jpg
+839,the crow: city of angels,"['Action', 'Thriller']",../dataset/posters/839.jpg
+1358,sling blade,"['Drama', 'Thriller']",../dataset/posters/1358.jpg
+3402,turtle diary,['Drama'],../dataset/posters/3402.jpg
+290,once were warriors,"['Crime', 'Drama']",../dataset/posters/290.jpg
+1965,repo man,"['Comedy', 'Sci-Fi']",../dataset/posters/1965.jpg
+3898,bait,"['Action', 'Comedy']",../dataset/posters/3898.jpg
+1395,tin men,"['Comedy', 'Drama']",../dataset/posters/1395.jpg
+2036,blank check,"[""Children's"", 'Comedy']",../dataset/posters/2036.jpg
+3173,any given sunday,['Drama'],../dataset/posters/3173.jpg
+3517,the bells,"['Crime', 'Drama']",../dataset/posters/3517.jpg
+1903,hav plenty,['Comedy'],../dataset/posters/1903.jpg
+62,mr. holland's opus,['Drama'],../dataset/posters/62.jpg
+764,heavy,"['Drama', 'Romance']",../dataset/posters/764.jpg
+236,french kiss,"['Comedy', 'Romance']",../dataset/posters/236.jpg
+2012,back to the future part iii,"['Comedy', 'Sci-Fi', 'Western']",../dataset/posters/2012.jpg
+744,brothers in trouble,['Drama'],../dataset/posters/744.jpg
+1746,senseless,['Comedy'],../dataset/posters/1746.jpg
+3697,predator 2,"['Action', 'Sci-Fi', 'Thriller']",../dataset/posters/3697.jpg
+87,dunston checks in,"[""Children's"", 'Comedy']",../dataset/posters/87.jpg
+2534,avalanche,['Action'],../dataset/posters/2534.jpg
+1342,candyman,['Horror'],../dataset/posters/1342.jpg
+1375,star trek iii: the search for spock,"['Action', 'Adventure', 'Sci-Fi']",../dataset/posters/1375.jpg
+3607,one little indian,"['Comedy', 'Drama', 'Western']",../dataset/posters/3607.jpg
+117,the young poisoner's handbook,['Crime'],../dataset/posters/117.jpg
+3277,beloved/friend,['Drama'],../dataset/posters/3277.jpg
+1910,i went down,"['Action', 'Comedy', 'Crime']",../dataset/posters/1910.jpg
+2170,wrongfully accused,"['Action', 'Comedy']",../dataset/posters/2170.jpg
+1364,zero kelvin,['Action'],../dataset/posters/1364.jpg
+694,the substitute,['Action'],../dataset/posters/694.jpg
+3687,light years,['Sci-Fi'],../dataset/posters/3687.jpg
+2865,sugar town,['Comedy'],../dataset/posters/2865.jpg
+1312,female perversions,['Drama'],../dataset/posters/1312.jpg
+89,nick of time,"['Action', 'Thriller']",../dataset/posters/89.jpg
+1713,mouse hunt,"[""Children's"", 'Comedy']",../dataset/posters/1713.jpg
+785,kingpin,['Comedy'],../dataset/posters/785.jpg
+2719,the haunting,"['Horror', 'Thriller']",../dataset/posters/2719.jpg
+2507,breakfast of champions,['Comedy'],../dataset/posters/2507.jpg
+2305,slam,['Drama'],../dataset/posters/2305.jpg
+514,the ref,['Comedy'],../dataset/posters/514.jpg
+3580,up at the villa,['Drama'],../dataset/posters/3580.jpg
+3371,bound for glory,['Drama'],../dataset/posters/3371.jpg
+3266,man bites dog,"['Action', 'Comedy', 'Crime', 'Drama']",../dataset/posters/3266.jpg
+2184,the trouble with harry,"['Mystery', 'Thriller']",../dataset/posters/2184.jpg
+3020,falling down,"['Action', 'Drama']",../dataset/posters/3020.jpg
+3682,magnum force,['Western'],../dataset/posters/3682.jpg
+799,the frighteners,"['Comedy', 'Horror']",../dataset/posters/799.jpg
+3483,the road to el dorado,"['Animation', ""Children's""]",../dataset/posters/3483.jpg
+23,assassins,['Thriller'],../dataset/posters/23.jpg
+3562,committed,"['Comedy', 'Drama']",../dataset/posters/3562.jpg
+1132,manon of the spring,['Drama'],../dataset/posters/1132.jpg
+433,clean slate,['Comedy'],../dataset/posters/433.jpg
+3688,porky's,['Comedy'],../dataset/posters/3688.jpg
+3034,robin hood,"['Animation', ""Children's""]",../dataset/posters/3034.jpg
+3543,diner,"['Comedy', 'Drama']",../dataset/posters/3543.jpg
+1212,the third man,"['Mystery', 'Thriller']",../dataset/posters/1212.jpg
+3298,boiler room,['Drama'],../dataset/posters/3298.jpg
+2342,hard core logo,['Comedy'],../dataset/posters/2342.jpg
+549,thirty-two short films about glenn gould,['Documentary'],../dataset/posters/549.jpg
+1683,the wings of the dove,"['Drama', 'Romance', 'Thriller']",../dataset/posters/1683.jpg
+2346,the stepford wives,"['Sci-Fi', 'Thriller']",../dataset/posters/2346.jpg
+154,belle de jour,['Drama'],../dataset/posters/154.jpg
+3019,drugstore cowboy,"['Crime', 'Drama']",../dataset/posters/3019.jpg
+1231,the right stuff,['Drama'],../dataset/posters/1231.jpg
+3539,the filth and the fury,['Documentary'],../dataset/posters/3539.jpg
+3946,get carter,"['Action', 'Drama', 'Thriller']",../dataset/posters/3946.jpg
+421,black beauty,"['Adventure', ""Children's""]",../dataset/posters/421.jpg
+1933,the life of ãmile zola,['Drama'],../dataset/posters/1933.jpg
+3147,the green mile,"['Drama', 'Thriller']",../dataset/posters/3147.jpg
+1241,braindead,"['Comedy', 'Horror']",../dataset/posters/1241.jpg
+809,fled,"['Action', 'Adventure']",../dataset/posters/809.jpg
+3293,conceiving ada,"['Drama', 'Sci-Fi']",../dataset/posters/3293.jpg
+843,lotto land,['Drama'],../dataset/posters/843.jpg
+2257,no small affair,"['Comedy', 'Romance']",../dataset/posters/2257.jpg
+2627,endurance,"['Documentary', 'Drama']",../dataset/posters/2627.jpg
+74,bed of roses,"['Drama', 'Romance']",../dataset/posters/74.jpg
+187,party girl,['Comedy'],../dataset/posters/187.jpg
+1504,hollow reed,['Drama'],../dataset/posters/1504.jpg
+3484,the skulls,['Thriller'],../dataset/posters/3484.jpg
+1797,everest,['Documentary'],../dataset/posters/1797.jpg
+2658,the flying saucer,['Sci-Fi'],../dataset/posters/2658.jpg
+518,the road to wellville,['Comedy'],../dataset/posters/518.jpg
+3749,time regained,['Drama'],../dataset/posters/3749.jpg
+2399,santa claus: the movie,"['Adventure', ""Children's"", 'Fantasy']",../dataset/posters/2399.jpg
+2797,big,"['Comedy', 'Fantasy']",../dataset/posters/2797.jpg
+3101,fatal attraction,['Thriller'],../dataset/posters/3101.jpg
+539,sleepless in seattle,"['Comedy', 'Romance']",../dataset/posters/539.jpg
+2887,simon sez,['Drama'],../dataset/posters/2887.jpg
+228,destiny turns on the radio,['Comedy'],../dataset/posters/228.jpg
+1109,charm's incidents,['Drama'],../dataset/posters/1109.jpg
+2608,heaven,['Thriller'],../dataset/posters/2608.jpg
+1698,les boys,['Comedy'],../dataset/posters/1698.jpg
+3940,the slumber party massacre iii,['Horror'],../dataset/posters/3940.jpg
+464,hard target,"['Action', 'Adventure', 'Crime', 'Thriller']",../dataset/posters/464.jpg
+2500,jawbreaker,['Comedy'],../dataset/posters/2500.jpg
+3497,max dugan returns,['Comedy'],../dataset/posters/3497.jpg
+2011,back to the future part ii,"['Comedy', 'Sci-Fi']",../dataset/posters/2011.jpg
+3170,hi-yo silver,['Western'],../dataset/posters/3170.jpg
+906,gaslight,"['Mystery', 'Thriller']",../dataset/posters/906.jpg
+739,honigmond,['Comedy'],../dataset/posters/739.jpg
+3107,backdraft,"['Action', 'Drama']",../dataset/posters/3107.jpg
+396,fall time,['Drama'],../dataset/posters/396.jpg
+3941,sorority house massacre,['Horror'],../dataset/posters/3941.jpg
+583,dear diary,"['Comedy', 'Drama']",../dataset/posters/583.jpg
+3242,santitos,['Comedy'],../dataset/posters/3242.jpg
+904,rear window,"['Mystery', 'Thriller']",../dataset/posters/904.jpg
+2441,the hi-lo country,"['Drama', 'Western']",../dataset/posters/2441.jpg
+3563,the crow: salvation,"['Action', 'Horror']",../dataset/posters/3563.jpg
+930,notorious,"['Film-Noir', 'Romance', 'Thriller']",../dataset/posters/930.jpg
+2327,tales from the darkside: the movie,['Horror'],../dataset/posters/2327.jpg
+1822,meet the deedles,"[""Children's"", 'Comedy']",../dataset/posters/1822.jpg
+3420,...and justice for all,"['Drama', 'Thriller']",../dataset/posters/3420.jpg
+345,"the adventures of priscilla, queen of the desert","['Comedy', 'Drama']",../dataset/posters/345.jpg
+1999,the exorcist iii,['Horror'],../dataset/posters/1999.jpg
+2172,strike!,['Comedy'],../dataset/posters/2172.jpg
+909,the apartment,"['Comedy', 'Drama']",../dataset/posters/909.jpg
+3511,ready to rumble,['Comedy'],../dataset/posters/3511.jpg
+2086,one magic christmas,"['Drama', 'Fantasy']",../dataset/posters/2086.jpg
+92,mary reilly,"['Drama', 'Thriller']",../dataset/posters/92.jpg
+1124,on golden pond,['Drama'],../dataset/posters/1124.jpg
+3792,duel in the sun,['Western'],../dataset/posters/3792.jpg
+2895,napoleon and samantha,['Adventure'],../dataset/posters/2895.jpg
+2983,the ipcress file,['Thriller'],../dataset/posters/2983.jpg
+1069,"murder, my sweet","['Film-Noir', 'Thriller']",../dataset/posters/1069.jpg
+2224,downhill,['Drama'],../dataset/posters/2224.jpg
+3673,benji the hunted,"['Adventure', ""Children's""]",../dataset/posters/3673.jpg
+2366,king kong,"['Action', 'Adventure', 'Horror']",../dataset/posters/2366.jpg
+1445,mchale's navy,"['Comedy', 'War']",../dataset/posters/1445.jpg
+726,last dance,['Drama'],../dataset/posters/726.jpg
+1290,some kind of wonderful,"['Drama', 'Romance']",../dataset/posters/1290.jpg
+2595,photographer,['Documentary'],../dataset/posters/2595.jpg
+1864,sour grapes,['Comedy'],../dataset/posters/1864.jpg
+1472,city of industry,"['Crime', 'Thriller']",../dataset/posters/1472.jpg
+2006,the mask of zorro,"['Action', 'Adventure', 'Romance']",../dataset/posters/2006.jpg
+214,before the rain,['Drama'],../dataset/posters/214.jpg
+1369,i can't sleep,"['Drama', 'Thriller']",../dataset/posters/1369.jpg
+130,angela,['Drama'],../dataset/posters/130.jpg
+1732,the big lebowski,"['Comedy', 'Crime', 'Mystery', 'Thriller']",../dataset/posters/1732.jpg
+2750,radio days,"['Comedy', 'Drama']",../dataset/posters/2750.jpg
+405,highlander iii: the sorcerer,"['Action', 'Sci-Fi']",../dataset/posters/405.jpg
+2430,mighty joe young,"['Adventure', ""Children's"", 'Drama']",../dataset/posters/2430.jpg
+3127,holy smoke,['Drama'],../dataset/posters/3127.jpg
+1697,the big bang theory,['Crime'],../dataset/posters/1697.jpg
+135,down periscope,['Comedy'],../dataset/posters/135.jpg
+18,four rooms,['Thriller'],../dataset/posters/18.jpg
+1508,traveller,['Drama'],../dataset/posters/1508.jpg
+548,terminal velocity,['Action'],../dataset/posters/548.jpg
+3778,on our merry way,"['Comedy', 'Drama']",../dataset/posters/3778.jpg
+253,interview with the vampire,"['Drama', 'Horror']",../dataset/posters/253.jpg
+2103,tall tale,"['Adventure', ""Children's""]",../dataset/posters/2103.jpg
+3081,sleepy hollow,"['Horror', 'Romance']",../dataset/posters/3081.jpg
+298,pushing hands,['Comedy'],../dataset/posters/298.jpg
+2071,and the band played on,['Drama'],../dataset/posters/2071.jpg
+3728,one false move,['Thriller'],../dataset/posters/3728.jpg
+2530,beneath the planet of the apes,"['Action', 'Sci-Fi']",../dataset/posters/2530.jpg
+385,a man of no importance,['Drama'],../dataset/posters/385.jpg
+802,phenomenon,"['Drama', 'Romance']",../dataset/posters/802.jpg
+2645,dracula,['Horror'],../dataset/posters/2645.jpg
+3313,class reunion,['Comedy'],../dataset/posters/3313.jpg
+2324,life is beautiful,"['Comedy', 'Drama']",../dataset/posters/2324.jpg
+2890,three kings,"['Drama', 'War']",../dataset/posters/2890.jpg
+1894,six days seven nights,"['Adventure', 'Comedy', 'Romance']",../dataset/posters/1894.jpg
+2419,extremities,"['Drama', 'Thriller']",../dataset/posters/2419.jpg
+509,the piano,"['Drama', 'Romance']",../dataset/posters/509.jpg
+391,jason's lyric,"['Crime', 'Drama']",../dataset/posters/391.jpg
+148,an awfully big adventure,['Drama'],../dataset/posters/148.jpg
+3677,baraka,['Documentary'],../dataset/posters/3677.jpg
+1276,cool hand luke,"['Comedy', 'Drama']",../dataset/posters/1276.jpg
+3601,the castaway cowboy,"['Comedy', 'Western']",../dataset/posters/3601.jpg
+2088,popeye,"['Adventure', 'Comedy', 'Musical']",../dataset/posters/2088.jpg
+2380,police academy 3: back in training,['Comedy'],../dataset/posters/2380.jpg
+2676,instinct,"['Drama', 'Thriller']",../dataset/posters/2676.jpg
+1029,dumbo,"['Animation', ""Children's"", 'Musical']",../dataset/posters/1029.jpg
+2230,always tell your wife,['Comedy'],../dataset/posters/2230.jpg
+3952,the contender,"['Drama', 'Thriller']",../dataset/posters/3952.jpg
+477,what's love got to do with it?,['Drama'],../dataset/posters/477.jpg
+3027,slaughterhouse 2,['Horror'],../dataset/posters/3027.jpg
+2935,the lady eve,"['Comedy', 'Romance']",../dataset/posters/2935.jpg
+3215,voyage of the damned,['Drama'],../dataset/posters/3215.jpg
+3350,a raisin in the sun,['Drama'],../dataset/posters/3350.jpg
+334,vanya on 42nd street,['Drama'],../dataset/posters/334.jpg
+3353,the closer you get,"['Comedy', 'Romance']",../dataset/posters/3353.jpg
+2009,soylent green,"['Sci-Fi', 'Thriller']",../dataset/posters/2009.jpg
+1453,the beautician and the beast,"['Comedy', 'Romance']",../dataset/posters/1453.jpg
+3088,harvey,['Comedy'],../dataset/posters/3088.jpg
+2212,the man who knew too much,['Thriller'],../dataset/posters/2212.jpg
+2362,glen or glenda,['Drama'],../dataset/posters/2362.jpg
+3411,babymother,['Drama'],../dataset/posters/3411.jpg
+2926,hairspray,"['Comedy', 'Drama']",../dataset/posters/2926.jpg
+3764,f/x 2,"['Action', 'Crime', 'Thriller']",../dataset/posters/3764.jpg
+3251,agnes of god,"['Drama', 'Mystery']",../dataset/posters/3251.jpg
+761,the phantom,['Adventure'],../dataset/posters/761.jpg
+1664,nã©nette et boni,['Drama'],../dataset/posters/1664.jpg
+2913,the mating habits of the earthbound human,['Comedy'],../dataset/posters/2913.jpg
+2920,children of paradise,"['Drama', 'Romance']",../dataset/posters/2920.jpg
+2351,nights of cabiria,['Drama'],../dataset/posters/2351.jpg
+1400,somebody is waiting,['Drama'],../dataset/posters/1400.jpg
+40,"cry, the beloved country",['Drama'],../dataset/posters/40.jpg
+2371,fletch,['Comedy'],../dataset/posters/2371.jpg
+3129,sweet and lowdown,"['Comedy', 'Drama']",../dataset/posters/3129.jpg
+2381,police academy 4: citizens on patrol,['Comedy'],../dataset/posters/2381.jpg
+2454,the fly,"['Horror', 'Sci-Fi']",../dataset/posters/2454.jpg
+3200,the last detail,"['Comedy', 'Drama']",../dataset/posters/3200.jpg
+164,devil in a blue dress,"['Crime', 'Film-Noir', 'Mystery', 'Thriller']",../dataset/posters/164.jpg
+3951,two family house,['Drama'],../dataset/posters/3951.jpg
+640,diabolique,"['Drama', 'Thriller']",../dataset/posters/640.jpg
+2358,savior,['Drama'],../dataset/posters/2358.jpg
+2694,big daddy,['Comedy'],../dataset/posters/2694.jpg
+1471,boys life 2,['Drama'],../dataset/posters/1471.jpg
+2149,house ii: the second story,"['Comedy', 'Horror']",../dataset/posters/2149.jpg
+752,vermont is for lovers,"['Comedy', 'Romance']",../dataset/posters/752.jpg
+513,radioland murders,"['Comedy', 'Mystery', 'Romance']",../dataset/posters/513.jpg
+3908,urban legends: final cut,['Horror'],../dataset/posters/3908.jpg
+1552,con air,"['Action', 'Adventure', 'Thriller']",../dataset/posters/1552.jpg
+2470,crocodile dundee,"['Adventure', 'Comedy']",../dataset/posters/2470.jpg
+1948,tom jones,['Comedy'],../dataset/posters/1948.jpg
+607,century,['Drama'],../dataset/posters/607.jpg
+2939,niagara,"['Drama', 'Thriller']",../dataset/posters/2939.jpg
+16,casino,"['Drama', 'Thriller']",../dataset/posters/16.jpg
+354,cobb,['Drama'],../dataset/posters/354.jpg
+808,alaska,"['Adventure', ""Children's""]",../dataset/posters/808.jpg
+252,i.q.,"['Comedy', 'Romance']",../dataset/posters/252.jpg
+3048,under the rainbow,['Comedy'],../dataset/posters/3048.jpg
+2245,working girl,"['Comedy', 'Drama']",../dataset/posters/2245.jpg
+3557,jennifer 8,['Thriller'],../dataset/posters/3557.jpg
+2788,and now for something completely different,['Comedy'],../dataset/posters/2788.jpg
+3904,an uninvited guest,['Drama'],../dataset/posters/3904.jpg
+2206,suspicion,"['Mystery', 'Thriller']",../dataset/posters/2206.jpg
+2363,godzilla,"['Action', 'Sci-Fi']",../dataset/posters/2363.jpg
+1895,can't hardly wait,"['Comedy', 'Drama', 'Romance']",../dataset/posters/1895.jpg
+2943,indochine,"['Drama', 'Romance']",../dataset/posters/2943.jpg
+3627,carnival of souls,"['Horror', 'Thriller']",../dataset/posters/3627.jpg
+3881,bittersweet motel,['Documentary'],../dataset/posters/3881.jpg
+1036,die hard,"['Action', 'Thriller']",../dataset/posters/1036.jpg
+3437,cool as ice,['Drama'],../dataset/posters/3437.jpg
+2075,mephisto,"['Drama', 'War']",../dataset/posters/2075.jpg
+2143,legend,"['Adventure', 'Fantasy', 'Romance']",../dataset/posters/2143.jpg
+2446,in dreams,['Thriller'],../dataset/posters/2446.jpg
+1531,losing chase,['Drama'],../dataset/posters/1531.jpg
+2618,the castle,['Comedy'],../dataset/posters/2618.jpg
+2015,the absent minded professor,"[""Children's"", 'Comedy', 'Fantasy']",../dataset/posters/2015.jpg
+2715,the velocity of gary,"['Comedy', 'Romance']",../dataset/posters/2715.jpg
+3811,breaker morant,"['Drama', 'War']",../dataset/posters/3811.jpg
+1902,dream for an insomniac,"['Drama', 'Romance']",../dataset/posters/1902.jpg
+80,the white balloon,['Drama'],../dataset/posters/80.jpg
+2853,communion,['Horror'],../dataset/posters/2853.jpg
+3942,sorority house massacre ii,['Horror'],../dataset/posters/3942.jpg
+3226,hellhounds on my trail,['Documentary'],../dataset/posters/3226.jpg
+144,the brothers mcmullen,['Comedy'],../dataset/posters/144.jpg
+575,the little rascals,"[""Children's"", 'Comedy']",../dataset/posters/575.jpg
+2751,from the hip,['Comedy'],../dataset/posters/2751.jpg
+3067,women on the verge of a nervous breakdown,"['Comedy', 'Drama']",../dataset/posters/3067.jpg
+235,ed wood,"['Comedy', 'Drama']",../dataset/posters/235.jpg
+439,dangerous game,['Drama'],../dataset/posters/439.jpg
+1116,a single girl,['Drama'],../dataset/posters/1116.jpg
+2167,blade,"['Action', 'Adventure', 'Horror']",../dataset/posters/2167.jpg
+944,lost horizon,['Drama'],../dataset/posters/944.jpg
+561,killer,['Thriller'],../dataset/posters/561.jpg
+3909,woman on top,"['Comedy', 'Romance']",../dataset/posters/3909.jpg
+1734,my life in pink,"['Comedy', 'Drama']",../dataset/posters/1734.jpg
+3524,arthur,"['Comedy', 'Romance']",../dataset/posters/3524.jpg
+1629,the matchmaker,"['Comedy', 'Romance']",../dataset/posters/1629.jpg
+318,the shawshank redemption,['Drama'],../dataset/posters/318.jpg
+2760,the gambler,['Drama'],../dataset/posters/2760.jpg
+206,unzipped,['Documentary'],../dataset/posters/206.jpg
+1291,indiana jones and the last crusade,"['Action', 'Adventure']",../dataset/posters/1291.jpg
+1037,the lawnmower man,"['Action', 'Sci-Fi', 'Thriller']",../dataset/posters/1037.jpg
+1514,temptress moon,['Romance'],../dataset/posters/1514.jpg
+875,nothing to lose,['Drama'],../dataset/posters/875.jpg
+1181,the shooter,['Action'],../dataset/posters/1181.jpg
+143,gospa,['Drama'],../dataset/posters/143.jpg
+826,diebinnen,['Drama'],../dataset/posters/826.jpg
+2016,the apple dumpling gang rides again,"[""Children's"", 'Comedy', 'Western']",../dataset/posters/2016.jpg
+2795,vacation,['Comedy'],../dataset/posters/2795.jpg
+3637,vagabond,['Drama'],../dataset/posters/3637.jpg
+2854,don't look in the basement!,['Horror'],../dataset/posters/2854.jpg
+444,even cowgirls get the blues,"['Comedy', 'Romance']",../dataset/posters/444.jpg
+173,judge dredd,"['Action', 'Adventure', 'Sci-Fi']",../dataset/posters/173.jpg
+2169,dead man on campus,['Comedy'],../dataset/posters/2169.jpg
+2591,jeanne and the perfect guy,"['Comedy', 'Romance']",../dataset/posters/2591.jpg
+1498,inventing the abbotts,"['Drama', 'Romance']",../dataset/posters/1498.jpg
+2960,beefcake,['Drama'],../dataset/posters/2960.jpg
+2026,disturbing behavior,"['Horror', 'Thriller']",../dataset/posters/2026.jpg
+3907,the prince of central park,['Drama'],../dataset/posters/3907.jpg
+3885,love & sex,"['Comedy', 'Romance']",../dataset/posters/3885.jpg
+1831,lost in space,"['Action', 'Sci-Fi', 'Thriller']",../dataset/posters/1831.jpg
+1680,sliding doors,"['Drama', 'Romance']",../dataset/posters/1680.jpg
+3174,man on the moon,"['Comedy', 'Drama']",../dataset/posters/3174.jpg
+1810,primary colors,['Drama'],../dataset/posters/1810.jpg
+1575,gabbeh,['Drama'],../dataset/posters/1575.jpg
+1299,the killing fields,"['Drama', 'War']",../dataset/posters/1299.jpg
+3399,sesame street presents follow that bird,"[""Children's"", 'Comedy']",../dataset/posters/3399.jpg
+392,the secret adventures of tom thumb,"['Adventure', ""Children's""]",../dataset/posters/392.jpg
+1125,the return of the pink panther,['Comedy'],../dataset/posters/1125.jpg
+619,ed,['Comedy'],../dataset/posters/619.jpg
+2640,superman,"['Action', 'Adventure', 'Sci-Fi']",../dataset/posters/2640.jpg
+373,red rock west,['Thriller'],../dataset/posters/373.jpg
+1817,no looking back,"['Comedy', 'Drama', 'Romance']",../dataset/posters/1817.jpg
+643,peanuts - die bank zahlt alles,['Comedy'],../dataset/posters/643.jpg
+2431,patch adams,"['Comedy', 'Drama']",../dataset/posters/2431.jpg
+348,bullets over broadway,['Comedy'],../dataset/posters/348.jpg
+1510,a brother's kiss,['Drama'],../dataset/posters/1510.jpg
+1821,the object of my affection,"['Comedy', 'Romance']",../dataset/posters/1821.jpg
+702,faces,['Drama'],../dataset/posters/702.jpg
+2231,rounders,"['Crime', 'Drama']",../dataset/posters/2231.jpg
+605,one fine day,"['Drama', 'Romance']",../dataset/posters/605.jpg
+1853,an alan smithee film: burn hollywood burn,['Comedy'],../dataset/posters/1853.jpg
+3433,death wish 4: the crackdown,"['Action', 'Drama']",../dataset/posters/3433.jpg
+3624,shanghai noon,['Action'],../dataset/posters/3624.jpg
+3429,creature comforts,"['Animation', 'Comedy']",../dataset/posters/3429.jpg
+2044,the devil and max devlin,['Comedy'],../dataset/posters/2044.jpg
+3618,small time crooks,['Comedy'],../dataset/posters/3618.jpg
+70,from dusk till dawn,"['Action', 'Comedy', 'Crime', 'Horror', 'Thriller']",../dataset/posters/70.jpg
+1216,the big blue,"['Adventure', 'Romance']",../dataset/posters/1216.jpg
+1887,almost heroes,"['Adventure', 'Comedy']",../dataset/posters/1887.jpg
+434,cliffhanger,"['Action', 'Adventure', 'Crime']",../dataset/posters/434.jpg
+863,celestial clockwork,['Comedy'],../dataset/posters/863.jpg
+2967,the bad seed,"['Drama', 'Thriller']",../dataset/posters/2967.jpg
+1596,career girls,['Drama'],../dataset/posters/1596.jpg
+301,picture bride,"['Drama', 'Romance']",../dataset/posters/301.jpg
+1190,tie me up! tie me down!,['Drama'],../dataset/posters/1190.jpg
+947,my man godfrey,['Comedy'],../dataset/posters/947.jpg
+3733,the paper chase,['Drama'],../dataset/posters/3733.jpg
+192,the show,['Documentary'],../dataset/posters/192.jpg
+3808,two women,"['Drama', 'War']",../dataset/posters/3808.jpg
+3427,coogan's bluff,['Crime'],../dataset/posters/3427.jpg
+3239,isn't she great?,['Comedy'],../dataset/posters/3239.jpg
+2409,rocky ii,"['Action', 'Drama']",../dataset/posters/2409.jpg
+2490,payback,"['Action', 'Thriller']",../dataset/posters/2490.jpg
+1647,playing god,"['Crime', 'Thriller']",../dataset/posters/1647.jpg
+2277,somewhere in the city,['Drama'],../dataset/posters/2277.jpg
+558,the pagemaster,"['Action', 'Adventure', 'Animation', ""Children's"", 'Fantasy']",../dataset/posters/558.jpg
+45,to die for,"['Comedy', 'Drama']",../dataset/posters/45.jpg
+3799,pokã©mon the movie 2000,"['Animation', ""Children's""]",../dataset/posters/3799.jpg
+921,my favorite year,['Comedy'],../dataset/posters/921.jpg
+3851,i'm the one that i want,['Comedy'],../dataset/posters/3851.jpg
+3903,urbania,['Drama'],../dataset/posters/3903.jpg
+2227,the lodger,['Thriller'],../dataset/posters/2227.jpg
+2331,living out loud,"['Comedy', 'Romance']",../dataset/posters/2331.jpg
+1088,dirty dancing,"['Musical', 'Romance']",../dataset/posters/1088.jpg
+2252,hero,"['Comedy', 'Drama']",../dataset/posters/2252.jpg
+3409,final destination,"['Drama', 'Thriller']",../dataset/posters/3409.jpg
+853,dingo,['Drama'],../dataset/posters/853.jpg
+3759,fun and fancy free,"['Animation', ""Children's"", 'Musical']",../dataset/posters/3759.jpg
+820,death in the garden,['Drama'],../dataset/posters/820.jpg
+3529,the postman always rings twice,"['Crime', 'Thriller']",../dataset/posters/3529.jpg
+2547,harvest,['Drama'],../dataset/posters/2547.jpg
+1404,night falls on manhattan,"['Crime', 'Drama']",../dataset/posters/1404.jpg
+3062,the longest day,"['Action', 'Drama', 'War']",../dataset/posters/3062.jpg
+1368,the forbidden christ,['Drama'],../dataset/posters/1368.jpg
+747,the stupids,['Comedy'],../dataset/posters/747.jpg
+898,the philadelphia story,"['Comedy', 'Romance']",../dataset/posters/898.jpg
+1443,a tickle in the heart,['Documentary'],../dataset/posters/1443.jpg
+1422,murder at 1600,"['Mystery', 'Thriller']",../dataset/posters/1422.jpg
+553,tombstone,['Western'],../dataset/posters/553.jpg
+2812,in too deep,"['Action', 'Thriller']",../dataset/posters/2812.jpg
+3343,and god created woman,"['Comedy', 'Drama', 'Romance']",../dataset/posters/3343.jpg
+2985,robocop,"['Action', 'Crime', 'Sci-Fi']",../dataset/posters/2985.jpg
+1615,the edge,"['Adventure', 'Thriller']",../dataset/posters/1615.jpg
+225,disclosure,"['Drama', 'Thriller']",../dataset/posters/225.jpg
+2496,blast from the past,"['Comedy', 'Romance']",../dataset/posters/2496.jpg
+490,malice,['Thriller'],../dataset/posters/490.jpg
+3113,end of days,"['Action', 'Thriller']",../dataset/posters/3113.jpg
+2515,children of the corn ii: the final sacrifice,['Horror'],../dataset/posters/2515.jpg
+1807,a cool dry place,['Drama'],../dataset/posters/1807.jpg
+1166,farmer & chase,['Comedy'],../dataset/posters/1166.jpg
+1798,hush,['Thriller'],../dataset/posters/1798.jpg
+648,mission: impossible,"['Action', 'Adventure', 'Mystery']",../dataset/posters/648.jpg
+2538,dancemaker,['Documentary'],../dataset/posters/2538.jpg
+3720,sunshine,['Drama'],../dataset/posters/3720.jpg
+1390,my fellow americans,['Comedy'],../dataset/posters/1390.jpg
+1242,glory,"['Action', 'Drama', 'War']",../dataset/posters/1242.jpg
+162,crumb,['Documentary'],../dataset/posters/162.jpg
+3322,3 strikes,['Comedy'],../dataset/posters/3322.jpg
+1669,the tango lesson,['Romance'],../dataset/posters/1669.jpg
+948,giant,['Drama'],../dataset/posters/948.jpg
+3504,network,"['Comedy', 'Drama']",../dataset/posters/3504.jpg
+460,getting even with dad,['Comedy'],../dataset/posters/460.jpg
+3248,sister act 2: back in the habit,['Comedy'],../dataset/posters/3248.jpg
+870,gone fishin',['Comedy'],../dataset/posters/870.jpg
+3346,color me blood red,['Horror'],../dataset/posters/3346.jpg
+3510,frequency,"['Drama', 'Thriller']",../dataset/posters/3510.jpg
+2563,beauty,['Drama'],../dataset/posters/2563.jpg
+2457,running scared,"['Action', 'Comedy']",../dataset/posters/2457.jpg
+1066,shall we dance?,"['Comedy', 'Musical', 'Romance']",../dataset/posters/1066.jpg
+2076,blue velvet,"['Drama', 'Mystery']",../dataset/posters/2076.jpg
+891,halloween: the curse of michael myers,"['Horror', 'Thriller']",../dataset/posters/891.jpg
+2464,trick or treat,['Horror'],../dataset/posters/2464.jpg
+2189,i married a strange person,['Animation'],../dataset/posters/2189.jpg
+1978,friday the 13th part v: a new beginning,['Horror'],../dataset/posters/1978.jpg
+879,the relic,['Horror'],../dataset/posters/879.jpg
+1286,somewhere in time,"['Drama', 'Romance']",../dataset/posters/1286.jpg
+2309,the inheritors,['Drama'],../dataset/posters/2309.jpg
+2421,"the karate kid, part ii","['Action', 'Adventure', 'Drama']",../dataset/posters/2421.jpg
+3255,a league of their own,"['Comedy', 'Drama']",../dataset/posters/3255.jpg
+974,algiers,"['Drama', 'Romance']",../dataset/posters/974.jpg
+2555,baby geniuses,['Comedy'],../dataset/posters/2555.jpg
