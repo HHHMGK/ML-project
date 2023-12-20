@@ -25,7 +25,7 @@ def getModel(name, param, device='cpu'):
 
 
 class theModel(pl.LightningModule):
-    def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), num_labels=18, device='cpu'):
+    def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), urModelName = None, urParam = None, num_labels=18, device='cpu'):
         """
         The main model combining the title and poster model
         :param tuple titleParam: (input_size : int, hidden_size : int, num_layers : int, bidirectional : bool, num_labels : int)
@@ -37,46 +37,52 @@ class theModel(pl.LightningModule):
         
         self.titleModel = getModel(titleModelName, titleParam, device=self.dev)
         self.posterModel = getModel(posterModelName, posterParam, device=self.dev)
+        self.urModel = None
         #TODO: add user rating models
 
         # Assembling
         self.fc = nn.Linear(2*self.num_labesls, self.num_labesls)
 
-    def forward(self, title, poster):
-        Tout = self.titleModel(title)
-        Pout = self.posterModel(poster)
-        
+    def forward(self, title, poster, user_rating):
+        Tout = Pout = Uout = torch.tensor([])
+        if self.titleModel != None:
+            Tout = self.titleModel(title)
+        if self.posterModel != None:
+            Pout = self.posterModel(poster)
+        if self.urModel != None:
+            Uout = self.urModel(user_rating)
         # Assembling
-        out = self.fc(torch.cat((Tout, Pout), dim=1))
+        out = self.fc(torch.cat((Tout, Pout, Uout), dim=1))
         return out
 
     def training_step(self, train_batch, batch_idx):
-        title_tensor, img_tensor, genre_tensor = self.getItemFromBatch(train_batch, batch_idx)
+        title_tensor, img_tensor, ur_tensor, genre_tensor = self.getItemFromBatch(train_batch, batch_idx)
 
-        output = self.forward(title_tensor, img_tensor)
+        output = self.forward(title_tensor, img_tensor, ur_tensor)
         loss = self.loss_fnc(output, genre_tensor)
         return loss
 
     def validation_step(self, val_batch, batch_idx):
-        title_tensor, img_tensor, genre_tensor = self.getItemFromBatch(val_batch, batch_idx)
+        title_tensor, img_tensor, ur_tensor, genre_tensor = self.getItemFromBatch(val_batch, batch_idx)
 
-        output = self.forward(title_tensor, img_tensor)
+        output = self.forward(title_tensor, img_tensor, ur_tensor)
         loss = self.loss_fnc(output, genre_tensor)
         self.log('val_loss', loss)
         # print('val_loss', loss)
 
     def predict_step(self, test_batch, batch_idx):
-        title_tensor, img_tensor, genre_tensor = self.getItemFromBatch(test_batch, batch_idx)
+        title_tensor, img_tensor, ur_tensor, genre_tensor = self.getItemFromBatch(test_batch, batch_idx)
 
-        output = self.forward(title_tensor, img_tensor)
+        output = self.forward(title_tensor, img_tensor, ur_tensor)
         return output, genre_tensor
 
     def getItemFromBatch(self, batch, idx):
-        title, img, genres = batch
+        title, img, ur, genres = batch
         title_tensor = title.clone().detach().to(self.dev)
         img_tensor = img.clone().detach().to(self.dev)
+        ur_tensor = ur.clone().detach().to(self.dev)
         genre_tensor = genres.clone().detach().to(self.dev)
-        return title_tensor, img_tensor, genre_tensor
+        return title_tensor, img_tensor, ur_tensor, genre_tensor
     
     def configure_optimizers(self):
         return optim.Adam(self.parameters(), lr=0.001)
@@ -231,3 +237,6 @@ class VGG16Model(nn.Module):
 
   def forward(self, x):
     return self.model(x)
+  
+class multilabelLogisticRegression():
+   pass
