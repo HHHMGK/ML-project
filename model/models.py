@@ -63,7 +63,7 @@ class theModel(pl.LightningModule):
         output = self.forward(title_tensor, img_tensor)
         loss = self.loss_fnc(output, genre_tensor)
         self.log('val_loss', loss)
-        print('val_loss', loss)
+        # print('val_loss', loss)
 
     def predict_step(self, test_batch, batch_idx):
         title_tensor, img_tensor, genre_tensor = self.getItemFromBatch(test_batch, batch_idx)
