@@ -4,7 +4,6 @@ movieid,title,genre,img_path
 2651,frankenstein meets the wolf man,['Horror'],../dataset/images/2651.jpg
 2989,for your eyes only,['Action'],../dataset/images/2989.jpg
 3415,the mirror,['Drama'],../dataset/images/3415.jpg
-576,fausto,['Comedy'],../dataset/images/576.jpg
 382,wolf,"['Drama', 'Horror']",../dataset/images/382.jpg
 1927,all quiet on the western front,['War'],../dataset/images/1927.jpg
 645,nelly & monsieur arnaud,['Drama'],../dataset/images/645.jpg
@@ -20,7 +19,6 @@ movieid,title,genre,img_path
 1865,wild man blues,['Documentary'],../dataset/images/1865.jpg
 1147,when we were kings,['Documentary'],../dataset/images/1147.jpg
 1246,dead poets society,['Drama'],../dataset/images/1246.jpg
-1118,tashunga,"['Adventure', 'Western']",../dataset/images/1118.jpg
 3432,death wish 3,"['Action', 'Drama']",../dataset/images/3432.jpg
 2506,the other sister,"['Comedy', 'Drama', 'Romance']",../dataset/images/2506.jpg
 2158,"henry: portrait of a serial killer, part 2","['Crime', 'Horror']",../dataset/images/2158.jpg
@@ -36,7 +34,6 @@ movieid,title,genre,img_path
 1010,the love bug,"[""Children's"", 'Comedy']",../dataset/images/1010.jpg
 1494,the sixth man,['Comedy'],../dataset/images/1494.jpg
 2995,the house on haunted hill,['Horror'],../dataset/images/2995.jpg
-559,"paris, france",['Comedy'],../dataset/images/559.jpg
 2311,2010,"['Mystery', 'Sci-Fi']",../dataset/images/2311.jpg
 157,canadian bacon,"['Comedy', 'War']",../dataset/images/157.jpg
 765,jack,"['Comedy', 'Drama']",../dataset/images/765.jpg
@@ -47,21 +44,17 @@ movieid,title,genre,img_path
 2553,village of the damned,"['Horror', 'Sci-Fi', 'Thriller']",../dataset/images/2553.jpg
 3309,a dog's life,['Comedy'],../dataset/images/3309.jpg
 1350,the omen,['Horror'],../dataset/images/1350.jpg
-1557,squeeze,['Drama'],../dataset/images/1557.jpg
 2952,hard 8,"['Crime', 'Thriller']",../dataset/images/2952.jpg
 1348,nosferatu,['Horror'],../dataset/images/1348.jpg
 3106,come see the paradise,"['Drama', 'Romance']",../dataset/images/3106.jpg
 28,persuasion,['Romance'],../dataset/images/28.jpg
 2144,sixteen candles,['Comedy'],../dataset/images/2144.jpg
 535,short cuts,['Drama'],../dataset/images/535.jpg
-1577,mondo,['Drama'],../dataset/images/1577.jpg
 485,last action hero,"['Action', 'Comedy']",../dataset/images/485.jpg
 3256,patriot games,"['Action', 'Thriller']",../dataset/images/3256.jpg
 1201,"the good, the bad and the ugly","['Action', 'Western']",../dataset/images/1201.jpg
 340,the war,"['Adventure', 'Drama']",../dataset/images/340.jpg
-878,bye-bye,['Drama'],../dataset/images/878.jpg
 1388,jaws 2,"['Action', 'Horror']",../dataset/images/1388.jpg
-634,theodore rex,['Comedy'],../dataset/images/634.jpg
 3316,reindeer games,"['Action', 'Thriller']",../dataset/images/3316.jpg
 483,king of the hill,['Drama'],../dataset/images/483.jpg
 3018,re-animator,['Horror'],../dataset/images/3018.jpg
@@ -74,14 +67,11 @@ movieid,title,genre,img_path
 1759,four days in september,['Drama'],../dataset/images/1759.jpg
 550,threesome,"['Comedy', 'Romance']",../dataset/images/550.jpg
 958,lady of burlesque,"['Comedy', 'Mystery']",../dataset/images/958.jpg
-2030,east palace west palace,['Drama'],../dataset/images/2030.jpg
-821,the crude oasis,['Romance'],../dataset/images/821.jpg
 2773,alice and martin,['Drama'],../dataset/images/2773.jpg
 2048,the great mouse detective,"['Animation', ""Children's""]",../dataset/images/2048.jpg
 1940,gentleman's agreement,['Drama'],../dataset/images/1940.jpg
 1526,fathers' day,['Comedy'],../dataset/images/1526.jpg
 78,the crossing guard,['Drama'],../dataset/images/78.jpg
-1159,love in bloom,['Romance'],../dataset/images/1159.jpg
 2761,the iron giant,"['Animation', ""Children's""]",../dataset/images/2761.jpg
 218,boys on the side,"['Comedy', 'Drama']",../dataset/images/218.jpg
 2463,ruthless people,['Comedy'],../dataset/images/2463.jpg
@@ -92,7 +82,6 @@ movieid,title,genre,img_path
 3039,trading places,['Comedy'],../dataset/images/3039.jpg
 3613,things change,['Comedy'],../dataset/images/3613.jpg
 3567,bossa nova,['Comedy'],../dataset/images/3567.jpg
-3237,kestrel's eye,['Documentary'],../dataset/images/3237.jpg
 984,the pompatus of love,"['Comedy', 'Drama']",../dataset/images/984.jpg
 3848,silent fall,"['Drama', 'Thriller']",../dataset/images/3848.jpg
 2541,cruel intentions,['Drama'],../dataset/images/2541.jpg
@@ -100,7 +89,6 @@ movieid,title,genre,img_path
 1947,west side story,"['Musical', 'Romance']",../dataset/images/1947.jpg
 2728,spartacus,['Drama'],../dataset/images/2728.jpg
 3180,play it to the bone,"['Comedy', 'Drama']",../dataset/images/3180.jpg
-2955,penitentiary ii,['Drama'],../dataset/images/2955.jpg
 1324,amityville: dollhouse,['Horror'],../dataset/images/1324.jpg
 3086,march of the wooden soldiers,['Comedy'],../dataset/images/3086.jpg
 2558,forces of nature,"['Comedy', 'Romance']",../dataset/images/2558.jpg
@@ -109,26 +97,20 @@ movieid,title,genre,img_path
 296,pulp fiction,"['Crime', 'Drama']",../dataset/images/296.jpg
 1670,welcome to sarajevo,"['Drama', 'War']",../dataset/images/1670.jpg
 3721,trixie,['Comedy'],../dataset/images/3721.jpg
-1164,two or three things i know about her,['Drama'],../dataset/images/1164.jpg
 390,faster pussycat! kill! kill!,"['Action', 'Comedy', 'Drama']",../dataset/images/390.jpg
-1538,the second jungle book: mowgli & baloo,"['Adventure', ""Children's""]",../dataset/images/1538.jpg
 324,the sum of us,['Comedy'],../dataset/images/324.jpg
 3893,nurse betty,"['Comedy', 'Thriller']",../dataset/images/3893.jpg
 2551,dead ringers,"['Drama', 'Thriller']",../dataset/images/2551.jpg
 1488,the devil's own,"['Action', 'Drama', 'Thriller', 'War']",../dataset/images/1488.jpg
-2934,a love bewitched,['Musical'],../dataset/images/2934.jpg
 3016,creepshow,['Horror'],../dataset/images/3016.jpg
 1223,a grand day out,"['Animation', 'Comedy']",../dataset/images/1223.jpg
 3486,devil girl from mars,['Sci-Fi'],../dataset/images/3486.jpg
 3354,mission to mars,['Sci-Fi'],../dataset/images/3354.jpg
 893,mother night,['Drama'],../dataset/images/893.jpg
 58,il postino,"['Drama', 'Romance']",../dataset/images/58.jpg
-2063,seventh heaven,"['Drama', 'Romance']",../dataset/images/2063.jpg
-3288,cotton mary,['Drama'],../dataset/images/3288.jpg
 611,hellraiser: bloodline,"['Action', 'Horror', 'Sci-Fi']",../dataset/images/611.jpg
 2060,baseketball,['Comedy'],../dataset/images/2060.jpg
 3706,angel heart,"['Film-Noir', 'Mystery', 'Thriller']",../dataset/images/3706.jpg
-1720,time tracers,"['Action', 'Adventure', 'Sci-Fi']",../dataset/images/1720.jpg
 131,frankie starlight,"['Drama', 'Romance']",../dataset/images/131.jpg
 125,flirting with disaster,['Comedy'],../dataset/images/125.jpg
 330,tales from the hood,"['Comedy', 'Horror']",../dataset/images/330.jpg
@@ -138,9 +120,7 @@ movieid,title,genre,img_path
 1699,the butcher boy,['Drama'],../dataset/images/1699.jpg
 1025,the sword in the stone,"['Animation', ""Children's""]",../dataset/images/1025.jpg
 1925,wings,"['Drama', 'Romance', 'War']",../dataset/images/1925.jpg
-2597,lost & found,"['Comedy', 'Romance']",../dataset/images/2597.jpg
 991,michael collins,"['Drama', 'War']",../dataset/images/991.jpg
-3630,the house of exorcism,['Horror'],../dataset/images/3630.jpg
 1777,the wedding singer,"['Comedy', 'Romance']",../dataset/images/1777.jpg
 3597,whipped,['Comedy'],../dataset/images/3597.jpg
 2335,the waterboy,['Comedy'],../dataset/images/2335.jpg
@@ -152,29 +132,20 @@ movieid,title,genre,img_path
 1943,the greatest show on earth,['Drama'],../dataset/images/1943.jpg
 2896,alvarez kelly,['Western'],../dataset/images/2896.jpg
 239,a goofy movie,"['Animation', ""Children's"", 'Comedy', 'Romance']",../dataset/images/239.jpg
-1708,ill gotten gains,['Drama'],../dataset/images/1708.jpg
 1173,the cook the thief his wife & her lover,['Drama'],../dataset/images/1173.jpg
-1141,hoogste tijd,['Drama'],../dataset/images/1141.jpg
 3520,how to stuff a wild bikini,['Comedy'],../dataset/images/3520.jpg
 459,the getaway,['Action'],../dataset/images/459.jpg
 2682,limbo,['Drama'],../dataset/images/2682.jpg
 250,heavyweights,"[""Children's"", 'Comedy']",../dataset/images/250.jpg
 1661,switchback,['Thriller'],../dataset/images/1661.jpg
-108,catwalk,['Documentary'],../dataset/images/108.jpg
 988,grace of my heart,"['Comedy', 'Drama']",../dataset/images/988.jpg
-1685,"i love you, i love you not",['Romance'],../dataset/images/1685.jpg
-1819,storefront hitchcock,['Drama'],../dataset/images/1819.jpg
 360,i love trouble,"['Action', 'Comedy']",../dataset/images/360.jpg
 3930,the creature from the black lagoon,['Horror'],../dataset/images/3930.jpg
-2777,cobra,['Drama'],../dataset/images/2777.jpg
 3064,poison ivy: new seduction,['Thriller'],../dataset/images/3064.jpg
 986,fly away home,"['Adventure', ""Children's""]",../dataset/images/986.jpg
 994,big night,['Drama'],../dataset/images/994.jpg
-3887,went to coney island on a mission from god... be back by five,['Drama'],../dataset/images/3887.jpg
-775,spirits of the dead,['Horror'],../dataset/images/775.jpg
 2819,three days of the condor,['Thriller'],../dataset/images/2819.jpg
 321,strawberry and chocolate,['Drama'],../dataset/images/321.jpg
-2823,the spiders,"['Action', 'Drama']",../dataset/images/2823.jpg
 1609,187,['Drama'],../dataset/images/1609.jpg
 3117,ride with the devil,"['Drama', 'Romance', 'War']",../dataset/images/3117.jpg
 3498,midnight express,['Drama'],../dataset/images/3498.jpg
@@ -194,7 +165,6 @@ movieid,title,genre,img_path
 3263,white men can't jump,['Comedy'],../dataset/images/3263.jpg
 1752,hard rain,"['Action', 'Thriller']",../dataset/images/1752.jpg
 3052,dogma,['Comedy'],../dataset/images/3052.jpg
-2578,the sticky fingers of time,['Sci-Fi'],../dataset/images/2578.jpg
 475,in the name of the father,['Drama'],../dataset/images/475.jpg
 2809,love stinks,['Comedy'],../dataset/images/2809.jpg
 3823,wonderland,['Drama'],../dataset/images/3823.jpg
@@ -202,9 +172,7 @@ movieid,title,genre,img_path
 2878,hell night,['Horror'],../dataset/images/2878.jpg
 1788,men with guns,"['Action', 'Drama']",../dataset/images/1788.jpg
 1272,patton,"['Drama', 'War']",../dataset/images/1272.jpg
-1071,for the moment,"['Romance', 'War']",../dataset/images/1071.jpg
 2062,the governess,"['Drama', 'Romance']",../dataset/images/2062.jpg
-403,two crimes,"['Comedy', 'Crime', 'Drama']",../dataset/images/403.jpg
 150,apollo 13,['Drama'],../dataset/images/150.jpg
 2365,king kong vs. godzilla,"['Action', 'Sci-Fi']",../dataset/images/2365.jpg
 172,johnny mnemonic,"['Action', 'Sci-Fi', 'Thriller']",../dataset/images/172.jpg
@@ -212,7 +180,6 @@ movieid,title,genre,img_path
 1021,angels in the outfield,"[""Children's"", 'Comedy']",../dataset/images/1021.jpg
 2902,psycho ii,"['Horror', 'Thriller']",../dataset/images/2902.jpg
 1608,air force one,"['Action', 'Thriller']",../dataset/images/1608.jpg
-1462,unforgotten: twenty-five years after willowbrook,['Documentary'],../dataset/images/1462.jpg
 3077,42 up,['Documentary'],../dataset/images/3077.jpg
 8,tom and huck,"['Adventure', ""Children's""]",../dataset/images/8.jpg
 1979,friday the 13th part vi: jason lives,['Horror'],../dataset/images/1979.jpg
@@ -221,25 +188,18 @@ movieid,title,genre,img_path
 313,the swan princess,"['Animation', ""Children's""]",../dataset/images/313.jpg
 1845,zero effect,"['Comedy', 'Thriller']",../dataset/images/1845.jpg
 3655,blow-out,['Drama'],../dataset/images/3655.jpg
-3279,knockout,"['Action', 'Adventure']",../dataset/images/3279.jpg
 278,miami rhapsody,['Comedy'],../dataset/images/278.jpg
 200,the tie that binds,['Thriller'],../dataset/images/200.jpg
 703,boys,['Drama'],../dataset/images/703.jpg
-2831,a dog of flanders,['Drama'],../dataset/images/2831.jpg
 2668,swamp thing,"['Horror', 'Sci-Fi']",../dataset/images/2668.jpg
 374,richie rich,"[""Children's"", 'Comedy']",../dataset/images/374.jpg
-2811,with friends like these...,['Comedy'],../dataset/images/2811.jpg
 2758,plenty,['Drama'],../dataset/images/2758.jpg
 1008,"davy crockett, king of the wild frontier",['Western'],../dataset/images/1008.jpg
 2364,godzilla,"['Action', 'Sci-Fi']",../dataset/images/2364.jpg
 940,the adventures of robin hood,"['Action', 'Adventure']",../dataset/images/940.jpg
-1877,little men,['Drama'],../dataset/images/1877.jpg
 2717,ghostbusters ii,"['Comedy', 'Horror']",../dataset/images/2717.jpg
 3250,alive,['Drama'],../dataset/images/3250.jpg
 2428,the faculty,"['Horror', 'Sci-Fi']",../dataset/images/2428.jpg
-732,original gangstas,['Crime'],../dataset/images/732.jpg
-127,the silence of the palace,['Drama'],../dataset/images/127.jpg
-3085,the living dead girl,['Horror'],../dataset/images/3085.jpg
 231,dumb & dumber,['Comedy'],../dataset/images/231.jpg
 2822,medicine man,"['Adventure', 'Romance']",../dataset/images/2822.jpg
 1936,mrs. miniver,"['Drama', 'War']",../dataset/images/1936.jpg
@@ -248,15 +208,11 @@ movieid,title,genre,img_path
 3935,kronos,['Horror'],../dataset/images/3935.jpg
 3144,the glass bottom boat,"['Comedy', 'Romance']",../dataset/images/3144.jpg
 3553,gossip,"['Drama', 'Thriller']",../dataset/images/3553.jpg
-873,shadow of angels,['Drama'],../dataset/images/873.jpg
 3933,the killer shrews,"['Horror', 'Sci-Fi']",../dataset/images/3933.jpg
 2171,"next stop, wonderland","['Comedy', 'Drama', 'Romance']",../dataset/images/2171.jpg
 1996,poltergeist iii,"['Horror', 'Thriller']",../dataset/images/1996.jpg
 2851,saturn 3,"['Adventure', 'Sci-Fi', 'Thriller']",../dataset/images/2851.jpg
-3530,smoking/no smoking,['Comedy'],../dataset/images/3530.jpg
 3500,mr. saturday night,"['Comedy', 'Drama']",../dataset/images/3500.jpg
-3065,ten benny,['Drama'],../dataset/images/3065.jpg
-683,the eye of vichy,['Documentary'],../dataset/images/683.jpg
 3214,american flyers,['Drama'],../dataset/images/3214.jpg
 888,land before time iii: the time of the great giving,"['Animation', ""Children's""]",../dataset/images/888.jpg
 300,quiz show,['Drama'],../dataset/images/300.jpg
@@ -266,10 +222,8 @@ movieid,title,genre,img_path
 175,kids,['Drama'],../dataset/images/175.jpg
 2641,superman ii,"['Action', 'Adventure', 'Sci-Fi']",../dataset/images/2641.jpg
 3826,hollow man,"['Horror', 'Sci-Fi', 'Thriller']",../dataset/images/3826.jpg
-2242,"grandview, u.s.a.",['Drama'],../dataset/images/2242.jpg
 77,nico icon,['Documentary'],../dataset/images/77.jpg
 3804,h.o.t.s.,['Comedy'],../dataset/images/3804.jpg
-2319,reach the rock,['Comedy'],../dataset/images/2319.jpg
 282,nell,['Drama'],../dataset/images/282.jpg
 238,far from home: the adventures of yellow dog,"['Adventure', ""Children's""]",../dataset/images/238.jpg
 3268,stop! or my mom will shoot,"['Action', 'Comedy']",../dataset/images/3268.jpg
@@ -282,30 +236,22 @@ movieid,title,genre,img_path
 3738,the sugarland express,['Drama'],../dataset/images/3738.jpg
 2393,star trek: insurrection,"['Action', 'Sci-Fi']",../dataset/images/2393.jpg
 631,all dogs go to heaven 2,"['Animation', ""Children's"", 'Musical']",../dataset/images/631.jpg
-601,the wooden man's bride,['Drama'],../dataset/images/601.jpg
-1139,everything relative,['Drama'],../dataset/images/1139.jpg
 2404,rambo iii,"['Action', 'War']",../dataset/images/2404.jpg
 2548,the rage: carrie 2,['Horror'],../dataset/images/2548.jpg
 1896,cousin bette,['Comedy'],../dataset/images/1896.jpg
 2412,rocky v,"['Action', 'Drama']",../dataset/images/2412.jpg
 3499,misery,['Horror'],../dataset/images/3499.jpg
-666,all things fair,['Drama'],../dataset/images/666.jpg
 3185,snow falling on cedars,['Drama'],../dataset/images/3185.jpg
-623,a modern affair,['Romance'],../dataset/images/623.jpg
 2948,from russia with love,['Action'],../dataset/images/2948.jpg
 343,the baby-sitters club,"[""Children's""]",../dataset/images/343.jpg
 2091,return from witch mountain,"[""Children's"", 'Sci-Fi']",../dataset/images/2091.jpg
 2330,hands on a hard body,['Documentary'],../dataset/images/2330.jpg
-2584,foolish,['Comedy'],../dataset/images/2584.jpg
-3652,city of the living dead,['Horror'],../dataset/images/3652.jpg
 2259,blame it on rio,"['Comedy', 'Romance']",../dataset/images/2259.jpg
 3859,the eyes of tammy faye,['Documentary'],../dataset/images/3859.jpg
 2435,hurlyburly,['Drama'],../dataset/images/2435.jpg
-1534,le bonheur,['Drama'],../dataset/images/1534.jpg
 3450,grumpy old men,['Comedy'],../dataset/images/3450.jpg
 1695,artemisia,['Drama'],../dataset/images/1695.jpg
 38,it takes two,['Comedy'],../dataset/images/38.jpg
-1433,the machine,"['Comedy', 'Horror']",../dataset/images/1433.jpg
 3611,saludos amigos,"['Animation', ""Children's"", 'Comedy']",../dataset/images/3611.jpg
 2540,the corruptor,"['Action', 'Crime', 'Drama', 'Thriller']",../dataset/images/2540.jpg
 1857,the real blonde,['Comedy'],../dataset/images/1857.jpg
@@ -345,7 +291,6 @@ movieid,title,genre,img_path
 735,cemetery man,"['Comedy', 'Horror']",../dataset/images/735.jpg
 1016,the shaggy dog,"[""Children's"", 'Comedy']",../dataset/images/1016.jpg
 976,a farewell to arms,"['Romance', 'War']",../dataset/images/976.jpg
-2909,"five wives, three secretaries and me",['Documentary'],../dataset/images/2909.jpg
 2516,children of the corn iii,['Horror'],../dataset/images/2516.jpg
 1483,crash,"['Drama', 'Thriller']",../dataset/images/1483.jpg
 2159,henry: portrait of a serial killer,"['Crime', 'Horror']",../dataset/images/2159.jpg
@@ -353,13 +298,11 @@ movieid,title,genre,img_path
 1997,the exorcist,['Horror'],../dataset/images/1997.jpg
 1892,a perfect murder,"['Mystery', 'Thriller']",../dataset/images/1892.jpg
 292,outbreak,"['Action', 'Drama', 'Thriller']",../dataset/images/292.jpg
-2213,waltzes from vienna,"['Comedy', 'Musical']",../dataset/images/2213.jpg
 1413,the whole wide world,['Drama'],../dataset/images/1413.jpg
 128,jupiter's wife,['Documentary'],../dataset/images/128.jpg
 1725,the education of little tree,['Drama'],../dataset/images/1725.jpg
 1878,woo,"['Comedy', 'Romance']",../dataset/images/1878.jpg
 209,white man's burden,['Drama'],../dataset/images/209.jpg
-856,mille bolle blu,['Comedy'],../dataset/images/856.jpg
 1479,the saint,"['Action', 'Romance', 'Thriller']",../dataset/images/1479.jpg
 2027,mafia!,"['Comedy', 'Crime']",../dataset/images/2027.jpg
 3633,on her majesty's secret service,['Action'],../dataset/images/3633.jpg
@@ -371,9 +314,7 @@ movieid,title,genre,img_path
 3861,the replacements,['Comedy'],../dataset/images/3861.jpg
 1547,shiloh,"[""Children's"", 'Drama']",../dataset/images/1547.jpg
 3028,the taming of the shrew,['Comedy'],../dataset/images/3028.jpg
-2254,choices,['Drama'],../dataset/images/2254.jpg
 1690,alien: resurrection,"['Action', 'Horror', 'Sci-Fi']",../dataset/images/1690.jpg
-1122,plutonium circus,['Documentary'],../dataset/images/1122.jpg
 753,a month by the lake,"['Comedy', 'Drama']",../dataset/images/753.jpg
 813,larger than life,['Comedy'],../dataset/images/813.jpg
 1332,the believers,"['Horror', 'Thriller']",../dataset/images/1332.jpg
@@ -389,27 +330,20 @@ movieid,title,genre,img_path
 1395,tin men,"['Comedy', 'Drama']",../dataset/images/1395.jpg
 2036,blank check,"[""Children's"", 'Comedy']",../dataset/images/2036.jpg
 3173,any given sunday,['Drama'],../dataset/images/3173.jpg
-3517,the bells,"['Crime', 'Drama']",../dataset/images/3517.jpg
-1903,hav plenty,['Comedy'],../dataset/images/1903.jpg
 62,mr. holland's opus,['Drama'],../dataset/images/62.jpg
 764,heavy,"['Drama', 'Romance']",../dataset/images/764.jpg
 236,french kiss,"['Comedy', 'Romance']",../dataset/images/236.jpg
 2012,back to the future part iii,"['Comedy', 'Sci-Fi', 'Western']",../dataset/images/2012.jpg
-744,brothers in trouble,['Drama'],../dataset/images/744.jpg
 1746,senseless,['Comedy'],../dataset/images/1746.jpg
 3697,predator 2,"['Action', 'Sci-Fi', 'Thriller']",../dataset/images/3697.jpg
 87,dunston checks in,"[""Children's"", 'Comedy']",../dataset/images/87.jpg
 2534,avalanche,['Action'],../dataset/images/2534.jpg
 1342,candyman,['Horror'],../dataset/images/1342.jpg
 1375,star trek iii: the search for spock,"['Action', 'Adventure', 'Sci-Fi']",../dataset/images/1375.jpg
-3607,one little indian,"['Comedy', 'Drama', 'Western']",../dataset/images/3607.jpg
 117,the young poisoner's handbook,['Crime'],../dataset/images/117.jpg
-3277,beloved/friend,['Drama'],../dataset/images/3277.jpg
 1910,i went down,"['Action', 'Comedy', 'Crime']",../dataset/images/1910.jpg
 2170,wrongfully accused,"['Action', 'Comedy']",../dataset/images/2170.jpg
-1364,zero kelvin,['Action'],../dataset/images/1364.jpg
 694,the substitute,['Action'],../dataset/images/694.jpg
-3687,light years,['Sci-Fi'],../dataset/images/3687.jpg
 2865,sugar town,['Comedy'],../dataset/images/2865.jpg
 1312,female perversions,['Drama'],../dataset/images/1312.jpg
 89,nick of time,"['Action', 'Thriller']",../dataset/images/89.jpg
@@ -450,8 +384,6 @@ movieid,title,genre,img_path
 3147,the green mile,"['Drama', 'Thriller']",../dataset/images/3147.jpg
 1241,braindead,"['Comedy', 'Horror']",../dataset/images/1241.jpg
 809,fled,"['Action', 'Adventure']",../dataset/images/809.jpg
-3293,conceiving ada,"['Drama', 'Sci-Fi']",../dataset/images/3293.jpg
-843,lotto land,['Drama'],../dataset/images/843.jpg
 2257,no small affair,"['Comedy', 'Romance']",../dataset/images/2257.jpg
 2627,endurance,"['Documentary', 'Drama']",../dataset/images/2627.jpg
 74,bed of roses,"['Drama', 'Romance']",../dataset/images/74.jpg
@@ -466,24 +398,16 @@ movieid,title,genre,img_path
 2797,big,"['Comedy', 'Fantasy']",../dataset/images/2797.jpg
 3101,fatal attraction,['Thriller'],../dataset/images/3101.jpg
 539,sleepless in seattle,"['Comedy', 'Romance']",../dataset/images/539.jpg
-2887,simon sez,['Drama'],../dataset/images/2887.jpg
 228,destiny turns on the radio,['Comedy'],../dataset/images/228.jpg
-1109,charm's incidents,['Drama'],../dataset/images/1109.jpg
-2608,heaven,['Thriller'],../dataset/images/2608.jpg
-1698,les boys,['Comedy'],../dataset/images/1698.jpg
 3940,the slumber party massacre iii,['Horror'],../dataset/images/3940.jpg
 464,hard target,"['Action', 'Adventure', 'Crime', 'Thriller']",../dataset/images/464.jpg
 2500,jawbreaker,['Comedy'],../dataset/images/2500.jpg
 3497,max dugan returns,['Comedy'],../dataset/images/3497.jpg
 2011,back to the future part ii,"['Comedy', 'Sci-Fi']",../dataset/images/2011.jpg
-3170,hi-yo silver,['Western'],../dataset/images/3170.jpg
 906,gaslight,"['Mystery', 'Thriller']",../dataset/images/906.jpg
-739,honigmond,['Comedy'],../dataset/images/739.jpg
 3107,backdraft,"['Action', 'Drama']",../dataset/images/3107.jpg
-396,fall time,['Drama'],../dataset/images/396.jpg
 3941,sorority house massacre,['Horror'],../dataset/images/3941.jpg
 583,dear diary,"['Comedy', 'Drama']",../dataset/images/583.jpg
-3242,santitos,['Comedy'],../dataset/images/3242.jpg
 904,rear window,"['Mystery', 'Thriller']",../dataset/images/904.jpg
 2441,the hi-lo country,"['Drama', 'Western']",../dataset/images/2441.jpg
 3563,the crow: salvation,"['Action', 'Horror']",../dataset/images/3563.jpg
@@ -493,40 +417,31 @@ movieid,title,genre,img_path
 3420,...and justice for all,"['Drama', 'Thriller']",../dataset/images/3420.jpg
 345,"the adventures of priscilla, queen of the desert","['Comedy', 'Drama']",../dataset/images/345.jpg
 1999,the exorcist iii,['Horror'],../dataset/images/1999.jpg
-2172,strike!,['Comedy'],../dataset/images/2172.jpg
 909,the apartment,"['Comedy', 'Drama']",../dataset/images/909.jpg
 3511,ready to rumble,['Comedy'],../dataset/images/3511.jpg
 2086,one magic christmas,"['Drama', 'Fantasy']",../dataset/images/2086.jpg
 92,mary reilly,"['Drama', 'Thriller']",../dataset/images/92.jpg
 1124,on golden pond,['Drama'],../dataset/images/1124.jpg
 3792,duel in the sun,['Western'],../dataset/images/3792.jpg
-2895,napoleon and samantha,['Adventure'],../dataset/images/2895.jpg
 2983,the ipcress file,['Thriller'],../dataset/images/2983.jpg
 1069,"murder, my sweet","['Film-Noir', 'Thriller']",../dataset/images/1069.jpg
-2224,downhill,['Drama'],../dataset/images/2224.jpg
 3673,benji the hunted,"['Adventure', ""Children's""]",../dataset/images/3673.jpg
 2366,king kong,"['Action', 'Adventure', 'Horror']",../dataset/images/2366.jpg
 1445,mchale's navy,"['Comedy', 'War']",../dataset/images/1445.jpg
-726,last dance,['Drama'],../dataset/images/726.jpg
 1290,some kind of wonderful,"['Drama', 'Romance']",../dataset/images/1290.jpg
-2595,photographer,['Documentary'],../dataset/images/2595.jpg
 1864,sour grapes,['Comedy'],../dataset/images/1864.jpg
 1472,city of industry,"['Crime', 'Thriller']",../dataset/images/1472.jpg
 2006,the mask of zorro,"['Action', 'Adventure', 'Romance']",../dataset/images/2006.jpg
 214,before the rain,['Drama'],../dataset/images/214.jpg
-1369,i can't sleep,"['Drama', 'Thriller']",../dataset/images/1369.jpg
-130,angela,['Drama'],../dataset/images/130.jpg
 1732,the big lebowski,"['Comedy', 'Crime', 'Mystery', 'Thriller']",../dataset/images/1732.jpg
 2750,radio days,"['Comedy', 'Drama']",../dataset/images/2750.jpg
 405,highlander iii: the sorcerer,"['Action', 'Sci-Fi']",../dataset/images/405.jpg
 2430,mighty joe young,"['Adventure', ""Children's"", 'Drama']",../dataset/images/2430.jpg
 3127,holy smoke,['Drama'],../dataset/images/3127.jpg
-1697,the big bang theory,['Crime'],../dataset/images/1697.jpg
 135,down periscope,['Comedy'],../dataset/images/135.jpg
 18,four rooms,['Thriller'],../dataset/images/18.jpg
 1508,traveller,['Drama'],../dataset/images/1508.jpg
 548,terminal velocity,['Action'],../dataset/images/548.jpg
-3778,on our merry way,"['Comedy', 'Drama']",../dataset/images/3778.jpg
 253,interview with the vampire,"['Drama', 'Horror']",../dataset/images/253.jpg
 2103,tall tale,"['Adventure', ""Children's""]",../dataset/images/2103.jpg
 3081,sleepy hollow,"['Horror', 'Romance']",../dataset/images/3081.jpg
@@ -547,35 +462,28 @@ movieid,title,genre,img_path
 148,an awfully big adventure,['Drama'],../dataset/images/148.jpg
 3677,baraka,['Documentary'],../dataset/images/3677.jpg
 1276,cool hand luke,"['Comedy', 'Drama']",../dataset/images/1276.jpg
-3601,the castaway cowboy,"['Comedy', 'Western']",../dataset/images/3601.jpg
 2088,popeye,"['Adventure', 'Comedy', 'Musical']",../dataset/images/2088.jpg
 2380,police academy 3: back in training,['Comedy'],../dataset/images/2380.jpg
 2676,instinct,"['Drama', 'Thriller']",../dataset/images/2676.jpg
 1029,dumbo,"['Animation', ""Children's"", 'Musical']",../dataset/images/1029.jpg
-2230,always tell your wife,['Comedy'],../dataset/images/2230.jpg
 3952,the contender,"['Drama', 'Thriller']",../dataset/images/3952.jpg
 477,what's love got to do with it?,['Drama'],../dataset/images/477.jpg
-3027,slaughterhouse 2,['Horror'],../dataset/images/3027.jpg
 2935,the lady eve,"['Comedy', 'Romance']",../dataset/images/2935.jpg
 3215,voyage of the damned,['Drama'],../dataset/images/3215.jpg
 3350,a raisin in the sun,['Drama'],../dataset/images/3350.jpg
 334,vanya on 42nd street,['Drama'],../dataset/images/334.jpg
-3353,the closer you get,"['Comedy', 'Romance']",../dataset/images/3353.jpg
 2009,soylent green,"['Sci-Fi', 'Thriller']",../dataset/images/2009.jpg
 1453,the beautician and the beast,"['Comedy', 'Romance']",../dataset/images/1453.jpg
 3088,harvey,['Comedy'],../dataset/images/3088.jpg
 2212,the man who knew too much,['Thriller'],../dataset/images/2212.jpg
 2362,glen or glenda,['Drama'],../dataset/images/2362.jpg
-3411,babymother,['Drama'],../dataset/images/3411.jpg
 2926,hairspray,"['Comedy', 'Drama']",../dataset/images/2926.jpg
 3764,f/x 2,"['Action', 'Crime', 'Thriller']",../dataset/images/3764.jpg
 3251,agnes of god,"['Drama', 'Mystery']",../dataset/images/3251.jpg
 761,the phantom,['Adventure'],../dataset/images/761.jpg
-1664,nã©nette et boni,['Drama'],../dataset/images/1664.jpg
 2913,the mating habits of the earthbound human,['Comedy'],../dataset/images/2913.jpg
 2920,children of paradise,"['Drama', 'Romance']",../dataset/images/2920.jpg
 2351,nights of cabiria,['Drama'],../dataset/images/2351.jpg
-1400,somebody is waiting,['Drama'],../dataset/images/1400.jpg
 40,"cry, the beloved country",['Drama'],../dataset/images/40.jpg
 2371,fletch,['Comedy'],../dataset/images/2371.jpg
 3129,sweet and lowdown,"['Comedy', 'Drama']",../dataset/images/3129.jpg
@@ -585,17 +493,13 @@ movieid,title,genre,img_path
 164,devil in a blue dress,"['Crime', 'Film-Noir', 'Mystery', 'Thriller']",../dataset/images/164.jpg
 3951,two family house,['Drama'],../dataset/images/3951.jpg
 640,diabolique,"['Drama', 'Thriller']",../dataset/images/640.jpg
-2358,savior,['Drama'],../dataset/images/2358.jpg
 2694,big daddy,['Comedy'],../dataset/images/2694.jpg
-1471,boys life 2,['Drama'],../dataset/images/1471.jpg
 2149,house ii: the second story,"['Comedy', 'Horror']",../dataset/images/2149.jpg
-752,vermont is for lovers,"['Comedy', 'Romance']",../dataset/images/752.jpg
 513,radioland murders,"['Comedy', 'Mystery', 'Romance']",../dataset/images/513.jpg
 3908,urban legends: final cut,['Horror'],../dataset/images/3908.jpg
 1552,con air,"['Action', 'Adventure', 'Thriller']",../dataset/images/1552.jpg
 2470,crocodile dundee,"['Adventure', 'Comedy']",../dataset/images/2470.jpg
 1948,tom jones,['Comedy'],../dataset/images/1948.jpg
-607,century,['Drama'],../dataset/images/607.jpg
 2939,niagara,"['Drama', 'Thriller']",../dataset/images/2939.jpg
 16,casino,"['Drama', 'Thriller']",../dataset/images/16.jpg
 354,cobb,['Drama'],../dataset/images/354.jpg
@@ -605,13 +509,11 @@ movieid,title,genre,img_path
 2245,working girl,"['Comedy', 'Drama']",../dataset/images/2245.jpg
 3557,jennifer 8,['Thriller'],../dataset/images/3557.jpg
 2788,and now for something completely different,['Comedy'],../dataset/images/2788.jpg
-3904,an uninvited guest,['Drama'],../dataset/images/3904.jpg
 2206,suspicion,"['Mystery', 'Thriller']",../dataset/images/2206.jpg
 2363,godzilla,"['Action', 'Sci-Fi']",../dataset/images/2363.jpg
 1895,can't hardly wait,"['Comedy', 'Drama', 'Romance']",../dataset/images/1895.jpg
 2943,indochine,"['Drama', 'Romance']",../dataset/images/2943.jpg
 3627,carnival of souls,"['Horror', 'Thriller']",../dataset/images/3627.jpg
-3881,bittersweet motel,['Documentary'],../dataset/images/3881.jpg
 1036,die hard,"['Action', 'Thriller']",../dataset/images/1036.jpg
 3437,cool as ice,['Drama'],../dataset/images/3437.jpg
 2075,mephisto,"['Drama', 'War']",../dataset/images/2075.jpg
@@ -626,13 +528,11 @@ movieid,title,genre,img_path
 80,the white balloon,['Drama'],../dataset/images/80.jpg
 2853,communion,['Horror'],../dataset/images/2853.jpg
 3942,sorority house massacre ii,['Horror'],../dataset/images/3942.jpg
-3226,hellhounds on my trail,['Documentary'],../dataset/images/3226.jpg
 144,the brothers mcmullen,['Comedy'],../dataset/images/144.jpg
 575,the little rascals,"[""Children's"", 'Comedy']",../dataset/images/575.jpg
 2751,from the hip,['Comedy'],../dataset/images/2751.jpg
 3067,women on the verge of a nervous breakdown,"['Comedy', 'Drama']",../dataset/images/3067.jpg
 235,ed wood,"['Comedy', 'Drama']",../dataset/images/235.jpg
-439,dangerous game,['Drama'],../dataset/images/439.jpg
 1116,a single girl,['Drama'],../dataset/images/1116.jpg
 2167,blade,"['Action', 'Adventure', 'Horror']",../dataset/images/2167.jpg
 944,lost horizon,['Drama'],../dataset/images/944.jpg
@@ -642,15 +542,11 @@ movieid,title,genre,img_path
 3524,arthur,"['Comedy', 'Romance']",../dataset/images/3524.jpg
 1629,the matchmaker,"['Comedy', 'Romance']",../dataset/images/1629.jpg
 318,the shawshank redemption,['Drama'],../dataset/images/318.jpg
-2760,the gambler,['Drama'],../dataset/images/2760.jpg
 206,unzipped,['Documentary'],../dataset/images/206.jpg
 1291,indiana jones and the last crusade,"['Action', 'Adventure']",../dataset/images/1291.jpg
 1037,the lawnmower man,"['Action', 'Sci-Fi', 'Thriller']",../dataset/images/1037.jpg
-1514,temptress moon,['Romance'],../dataset/images/1514.jpg
 875,nothing to lose,['Drama'],../dataset/images/875.jpg
 1181,the shooter,['Action'],../dataset/images/1181.jpg
-143,gospa,['Drama'],../dataset/images/143.jpg
-826,diebinnen,['Drama'],../dataset/images/826.jpg
 2016,the apple dumpling gang rides again,"[""Children's"", 'Comedy', 'Western']",../dataset/images/2016.jpg
 2795,vacation,['Comedy'],../dataset/images/2795.jpg
 3637,vagabond,['Drama'],../dataset/images/3637.jpg
@@ -658,11 +554,8 @@ movieid,title,genre,img_path
 444,even cowgirls get the blues,"['Comedy', 'Romance']",../dataset/images/444.jpg
 173,judge dredd,"['Action', 'Adventure', 'Sci-Fi']",../dataset/images/173.jpg
 2169,dead man on campus,['Comedy'],../dataset/images/2169.jpg
-2591,jeanne and the perfect guy,"['Comedy', 'Romance']",../dataset/images/2591.jpg
 1498,inventing the abbotts,"['Drama', 'Romance']",../dataset/images/1498.jpg
-2960,beefcake,['Drama'],../dataset/images/2960.jpg
 2026,disturbing behavior,"['Horror', 'Thriller']",../dataset/images/2026.jpg
-3907,the prince of central park,['Drama'],../dataset/images/3907.jpg
 3885,love & sex,"['Comedy', 'Romance']",../dataset/images/3885.jpg
 1831,lost in space,"['Action', 'Sci-Fi', 'Thriller']",../dataset/images/1831.jpg
 1680,sliding doors,"['Drama', 'Romance']",../dataset/images/1680.jpg
@@ -677,10 +570,8 @@ movieid,title,genre,img_path
 2640,superman,"['Action', 'Adventure', 'Sci-Fi']",../dataset/images/2640.jpg
 373,red rock west,['Thriller'],../dataset/images/373.jpg
 1817,no looking back,"['Comedy', 'Drama', 'Romance']",../dataset/images/1817.jpg
-643,peanuts - die bank zahlt alles,['Comedy'],../dataset/images/643.jpg
 2431,patch adams,"['Comedy', 'Drama']",../dataset/images/2431.jpg
 348,bullets over broadway,['Comedy'],../dataset/images/348.jpg
-1510,a brother's kiss,['Drama'],../dataset/images/1510.jpg
 1821,the object of my affection,"['Comedy', 'Romance']",../dataset/images/1821.jpg
 702,faces,['Drama'],../dataset/images/702.jpg
 2231,rounders,"['Crime', 'Drama']",../dataset/images/2231.jpg
@@ -702,14 +593,12 @@ movieid,title,genre,img_path
 1190,tie me up! tie me down!,['Drama'],../dataset/images/1190.jpg
 947,my man godfrey,['Comedy'],../dataset/images/947.jpg
 3733,the paper chase,['Drama'],../dataset/images/3733.jpg
-192,the show,['Documentary'],../dataset/images/192.jpg
 3808,two women,"['Drama', 'War']",../dataset/images/3808.jpg
 3427,coogan's bluff,['Crime'],../dataset/images/3427.jpg
 3239,isn't she great?,['Comedy'],../dataset/images/3239.jpg
 2409,rocky ii,"['Action', 'Drama']",../dataset/images/2409.jpg
 2490,payback,"['Action', 'Thriller']",../dataset/images/2490.jpg
 1647,playing god,"['Crime', 'Thriller']",../dataset/images/1647.jpg
-2277,somewhere in the city,['Drama'],../dataset/images/2277.jpg
 558,the pagemaster,"['Action', 'Adventure', 'Animation', ""Children's"", 'Fantasy']",../dataset/images/558.jpg
 45,to die for,"['Comedy', 'Drama']",../dataset/images/45.jpg
 3799,pokã©mon the movie 2000,"['Animation', ""Children's""]",../dataset/images/3799.jpg
@@ -721,17 +610,12 @@ movieid,title,genre,img_path
 1088,dirty dancing,"['Musical', 'Romance']",../dataset/images/1088.jpg
 2252,hero,"['Comedy', 'Drama']",../dataset/images/2252.jpg
 3409,final destination,"['Drama', 'Thriller']",../dataset/images/3409.jpg
-853,dingo,['Drama'],../dataset/images/853.jpg
 3759,fun and fancy free,"['Animation', ""Children's"", 'Musical']",../dataset/images/3759.jpg
-820,death in the garden,['Drama'],../dataset/images/820.jpg
 3529,the postman always rings twice,"['Crime', 'Thriller']",../dataset/images/3529.jpg
-2547,harvest,['Drama'],../dataset/images/2547.jpg
 1404,night falls on manhattan,"['Crime', 'Drama']",../dataset/images/1404.jpg
 3062,the longest day,"['Action', 'Drama', 'War']",../dataset/images/3062.jpg
-1368,the forbidden christ,['Drama'],../dataset/images/1368.jpg
 747,the stupids,['Comedy'],../dataset/images/747.jpg
 898,the philadelphia story,"['Comedy', 'Romance']",../dataset/images/898.jpg
-1443,a tickle in the heart,['Documentary'],../dataset/images/1443.jpg
 1422,murder at 1600,"['Mystery', 'Thriller']",../dataset/images/1422.jpg
 553,tombstone,['Western'],../dataset/images/553.jpg
 2812,in too deep,"['Action', 'Thriller']",../dataset/images/2812.jpg
@@ -744,34 +628,27 @@ movieid,title,genre,img_path
 3113,end of days,"['Action', 'Thriller']",../dataset/images/3113.jpg
 2515,children of the corn ii: the final sacrifice,['Horror'],../dataset/images/2515.jpg
 1807,a cool dry place,['Drama'],../dataset/images/1807.jpg
-1166,farmer & chase,['Comedy'],../dataset/images/1166.jpg
 1798,hush,['Thriller'],../dataset/images/1798.jpg
 648,mission: impossible,"['Action', 'Adventure', 'Mystery']",../dataset/images/648.jpg
-2538,dancemaker,['Documentary'],../dataset/images/2538.jpg
 3720,sunshine,['Drama'],../dataset/images/3720.jpg
 1390,my fellow americans,['Comedy'],../dataset/images/1390.jpg
 1242,glory,"['Action', 'Drama', 'War']",../dataset/images/1242.jpg
 162,crumb,['Documentary'],../dataset/images/162.jpg
-3322,3 strikes,['Comedy'],../dataset/images/3322.jpg
 1669,the tango lesson,['Romance'],../dataset/images/1669.jpg
 948,giant,['Drama'],../dataset/images/948.jpg
 3504,network,"['Comedy', 'Drama']",../dataset/images/3504.jpg
 460,getting even with dad,['Comedy'],../dataset/images/460.jpg
 3248,sister act 2: back in the habit,['Comedy'],../dataset/images/3248.jpg
 870,gone fishin',['Comedy'],../dataset/images/870.jpg
-3346,color me blood red,['Horror'],../dataset/images/3346.jpg
 3510,frequency,"['Drama', 'Thriller']",../dataset/images/3510.jpg
-2563,beauty,['Drama'],../dataset/images/2563.jpg
 2457,running scared,"['Action', 'Comedy']",../dataset/images/2457.jpg
 1066,shall we dance?,"['Comedy', 'Musical', 'Romance']",../dataset/images/1066.jpg
 2076,blue velvet,"['Drama', 'Mystery']",../dataset/images/2076.jpg
 891,halloween: the curse of michael myers,"['Horror', 'Thriller']",../dataset/images/891.jpg
-2464,trick or treat,['Horror'],../dataset/images/2464.jpg
 2189,i married a strange person,['Animation'],../dataset/images/2189.jpg
 1978,friday the 13th part v: a new beginning,['Horror'],../dataset/images/1978.jpg
 879,the relic,['Horror'],../dataset/images/879.jpg
 1286,somewhere in time,"['Drama', 'Romance']",../dataset/images/1286.jpg
-2309,the inheritors,['Drama'],../dataset/images/2309.jpg
 2421,"the karate kid, part ii","['Action', 'Adventure', 'Drama']",../dataset/images/2421.jpg
 3255,a league of their own,"['Comedy', 'Drama']",../dataset/images/3255.jpg
 974,algiers,"['Drama', 'Romance']",../dataset/images/974.jpg

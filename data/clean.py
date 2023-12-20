@@ -44,9 +44,9 @@ print('Title cleaned')
 movies_train, movies_val = train_test_split(movies_train, test_size=0.2, random_state=42)
 
 # add img_path column
-movies_train['img_path'] = movies_train.index.map(lambda x: '../dataset/posters/' + str(x) + '.jpg')
-movies_val['img_path'] = movies_val.index.map(lambda x: '../dataset/posters/' + str(x) + '.jpg')
-movies_test['img_path'] = movies_test.index.map(lambda x: '../dataset/posters/' + str(x) + '.jpg')
+movies_train['img_path'] = movies_train.index.map(lambda x: '../dataset/images/' + str(x) + '.jpg')
+movies_val['img_path'] = movies_val.index.map(lambda x: '../dataset/images/' + str(x) + '.jpg')
+movies_test['img_path'] = movies_test.index.map(lambda x: '../dataset/images/' + str(x) + '.jpg')
 print('Add img_path column done')
 
 
@@ -56,3 +56,13 @@ movies_val.to_csv('../dataset/movies_val.csv')
 movies_test.to_csv('../dataset/movies_test.csv')
 
 print('Title cleaned and saved to csv')
+
+# drop every row with no poster
+movies_train = movies_train[movies_train.img_path.apply(lambda x: os.path.isfile(x))]
+movies_val = movies_val[movies_val.img_path.apply(lambda x: os.path.isfile(x))]
+movies_test = movies_test[movies_test.img_path.apply(lambda x: os.path.isfile(x))]
+print('Drop rows with no poster done')
+# write to csv
+movies_train.to_csv('../dataset/movies_train_dropped.csv')
+movies_val.to_csv('../dataset/movies_val_dropped.csv')
+movies_test.to_csv('../dataset/movies_test_dropped.csv')
