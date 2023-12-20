@@ -51,6 +51,7 @@ print('Add img_path column done')
 
 # clean 2 minor data userRating and users
 ratings.drop(columns=['timestamp'], inplace=True)
+# ratings.reset_index(drop=True, inplace=True)
 users.drop(columns=['zip','occupation'], inplace=True)
 
 # write to csv 
@@ -58,7 +59,7 @@ movies_train.to_csv('../dataset/movies_train.csv')
 movies_val.to_csv('../dataset/movies_val.csv')
 movies_test.to_csv('../dataset/movies_test.csv')
 
-ratings.to_csv('../dataset/ratings.csv')
+ratings.to_csv('../dataset/ratings.csv', index=False)
 users.to_csv('../dataset/users.csv')
 print('Title cleaned and saved to csv')
 
