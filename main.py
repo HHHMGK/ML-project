@@ -1,6 +1,6 @@
 import argparse, os
-from config import Config 
 from model.models import *
+from utils.config import Config 
 from utils.dataset import *
 from utils.metrics import *
 
