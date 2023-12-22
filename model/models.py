@@ -5,7 +5,6 @@ import torch.optim as optim
 import pytorch_lightning as pl
 from torchvision.models import DenseNet121_Weights, densenet121, DenseNet169_Weights, densenet169, VGG16_Weights, vgg16
 
-from PIL import Image
 
 def getModel(name, param, device='cpu'):
     if name == 'LSTM':

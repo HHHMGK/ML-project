@@ -23,15 +23,19 @@ availableURatingModels = {
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Main argument parser")
     parser.add_argument("run_mode", choices=("train", "test"), help="Main running mode of the program")
+    # arguments for model
     parser.add_argument("--title_model", type=str,  default="None", choices=availableTitleModels.keys(), help="The type of model to be ran")
     parser.add_argument("--poster_model", type=str,  default="None", choices=availablePosterModels.keys(), help="The type of model to be ran")
     parser.add_argument("--urating_model", type=str,  default="None", choices=availableURatingModels.keys(), help="The type of model to be ran")
     parser.add_argument("--model_config", type=str, default="model_config.yaml", help="Specify the model config file to load")
+    # arguments for dataset
     parser.add_argument("--dataset_dir", type=str, default="dataset/", help="Location of dataset")
     parser.add_argument("--use_dropped_data", type=bool, default=False, help="Choosing to use dropped data or not")
-    parser.add_argument("--saved_model_dir", type=str, default="model/saved_models/", help="Location to save the model after training(checkpoint)")
     parser.add_argument("--batch_size", type=int, default=32, help="Specify the batch_size to run the model with.")
     parser.add_argument("--image_size", type=int, default=256, help="Specify the image size for the model")
+    # arguments for training only
+    parser.add_argument("--max_epochs", type=int, default=20, help="Specify the number of epochs to train the model")
+    parser.add_argument("--saved_model_dir", type=str, default="model/saved_models/", help="Location to save the model after training(checkpoint)")
     # arguments for testing only
     parser.add_argument("--checkpoint", type=str, default=None, help="Specify to load the checkpoint into model.")
     # # arguments for inference only
@@ -67,7 +71,7 @@ if __name__ == "__main__":
 
     # train
     if args.run_mode == "train":
-        trainer = pl.Trainer(max_epochs=args.max_epochs)
+        trainer = pl.Trainer(max_epochs=args.max_epochs, default_root_dir=args.saved_model_dir)
         trainer.fit(model, train_dataloader, val_dataloader)
     
     # test
