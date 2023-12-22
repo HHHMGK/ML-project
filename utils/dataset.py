@@ -9,10 +9,11 @@ from torchvision import transforms
     
 def getDataLoader(dataset_dir, use_dropped_data=False, batch_size=32, img_size='256', NUM_WORKERS = os.cpu_count()):
     posterTransformer = getImgTransformer(size='256')
-    movies_train, movies_test, movies_val, genres_list = load_data(dataset_dir, use_dropped_data)
-    train = theDataset(movies_train, posterTransformer, genres_list)
-    val = theDataset(movies_val, posterTransformer, genres_list)
-    test = theDataset(movies_test, posterTransformer, genres_list)
+    movies_train, movies_test, movies_val, ratings, genres_list = load_data(dataset_dir, use_dropped_data)
+    maxUserID = len(ratings.index)
+    train = theDataset(movies_train, ratings, posterTransformer, genres_list, maxUserID)
+    val = theDataset(movies_val, ratings, posterTransformer, genres_list, maxUserID)
+    test = theDataset(movies_test, ratings, posterTransformer, genres_list, maxUserID)
     train.merge_vocab(val)
     train.merge_vocab(test)
     val.merge_vocab(train)
@@ -20,7 +21,8 @@ def getDataLoader(dataset_dir, use_dropped_data=False, batch_size=32, img_size='
     train_dataloader = DataLoader(train, batch_size=batch_size, shuffle=True, num_workers=NUM_WORKERS)
     val_dataloader = DataLoader(val, batch_size=batch_size, shuffle=False, num_workers=NUM_WORKERS)
     test_dataloader = DataLoader(test, batch_size=batch_size, shuffle=False, num_workers=NUM_WORKERS)
-    return train_dataloader, val_dataloader, test_dataloader
+    sizes = (train.vocab_size, maxUserID)
+    return train_dataloader, val_dataloader, test_dataloader, sizes
 
 def load_data(dataset_dir, use_dropped_data=False):
     print('Loading data... from ', dataset_dir)
@@ -32,10 +34,11 @@ def load_data(dataset_dir, use_dropped_data=False):
     movies_train = pd.read_csv(dataset_dir + 'movies_train' + is_drop + '.csv')
     movies_test = pd.read_csv(dataset_dir + 'movies_test' + is_drop + '.csv')
     movies_val = pd.read_csv(dataset_dir + 'movies_val' + is_drop + '.csv')
-    return movies_train, movies_test, movies_val, genres_list
+    ratings = pd.read_csv(dataset_dir + 'ratings.csv')
+    return movies_train, movies_test, movies_val, ratings, genres_list
 
 class theDataset(Dataset):
-    def __init__(self, df, posterTransformer, genres_list=None):
+    def __init__(self, df, allRatingdf, posterTransformer, genres_list=None, maxUserID=6040):
         self.df = df
 
         # title process
@@ -46,6 +49,16 @@ class theDataset(Dataset):
         # image process
         self.transformer = posterTransformer
 
+        # rating process 
+        self.user_ratings = {}
+        for movie_id in df['movieid']:
+            rating_for_current_movie = np.zeros(maxUserID)
+            rated_users = allRatingdf.loc[allRatingdf['movieid'] == movie_id].userid.tolist()
+            rated_v = allRatingdf['rating'].values
+            for user in rated_users:
+                rating_for_current_movie[user - 1] = int(rated_v[user])
+            self.user_ratings[movie_id] = rating_for_current_movie
+            
         # genres process
         if genres_list == None:
             genres_list = ['Crime', 'Thriller', 'Fantasy', 'Horror', 'Sci-Fi', 'Comedy', 'Documentary', 'Adventure', 'Film-Noir', 'Animation', 'Romance', 'Drama', 'Western', 'Musical', 'Action', 'Mystery', 'War', "Children's"]
@@ -55,13 +68,16 @@ class theDataset(Dataset):
         return len(self.df)
     
     def __getitem__(self, idx):
-        title = self.df.iloc[idx]['title']
+        oneItem = self.df.iloc[idx]
+        title = oneItem['title']
         title_vec = onehot_vectorize(title, self.title2int)
-        genres = self.df.iloc[idx]['genre']
-        genres_vec = multihot_genres(genres, self.genre2int)
-        img_path = self.df.iloc[idx]['img_path']
+        img_path = oneItem['img_path']
         img = convert_img(img_path, self.transformer)
-        return title_vec, img, genres_vec
+        movie_id = oneItem['movieid']
+        rating = self.user_ratings[movie_id]
+        genres = oneItem['genre']
+        genres_vec = multihot_genres(genres, self.genre2int)
+        return title_vec, img, rating, genres_vec
     
     def merge_vocab(self, other):
         self.title2int.update(other.title2int)

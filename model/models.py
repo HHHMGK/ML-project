@@ -70,12 +70,12 @@ class theModel(pl.LightningModule):
         return output, genre_tensor
 
     def getItemFromBatch(self, batch, idx):
-        # title, img, ur, genres = batch
-        title, img, genres = batch
+        title, img, ur, genres = batch
+        # title, img, genres = batch
         title_tensor = title.clone().detach().to(self.device)
         img_tensor = img.clone().detach().to(self.device)
-        # ur_tensor = ur.clone().detach().to(self.device)
-        ur_tensor = torch.tensor([]).to(self.device)
+        ur_tensor = ur.clone().detach().to(self.device)
+        # ur_tensor = torch.tensor([]).to(self.device)
         genre_tensor = genres.clone().detach().to(self.device)
         return title_tensor, img_tensor, ur_tensor, genre_tensor
     
@@ -236,6 +236,24 @@ class VGG16Model(nn.Module):
 
   def forward(self, x):
     return self.model(x)
-  
 class multilabelLogisticRegression():
    pass
+
+class simpleNN(nn.Module):
+    def __init__(self, input_shape, output_shape) -> None:
+        super(simpleNN, self).__init__()
+        self.input_shape = input_shape
+        self.output_shape = output_shape
+        print('simpleNN', input_shape, output_shape)
+
+        self.core = nn.Sequential()
+        while input_shape > 4*output_shape:
+            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//2))
+            self.core.add_module(f'relu{input_shape}', nn.ReLU())
+            input_shape //= 2
+        self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, output_shape))
+
+    def forward(self, title):
+        out = self.core(title)
+        return out
+   

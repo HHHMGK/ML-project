@@ -16,6 +16,8 @@ availablePosterModels = {
     "None": None
 }
 availableURatingModels = {
+    "simpleNN": simpleNN,
+    "None": None
 }
 
 
@@ -47,8 +49,8 @@ if __name__ == "__main__":
     # create directory if not exist
     os.makedirs(args.saved_model_dir, exist_ok=True)
     # load dataset
-    train_dataloader, val_dataloader, test_dataloader = getDataLoader(args.dataset_dir, args.use_dropped_data, args.batch_size, args.image_size)
-
+    train_dataloader, val_dataloader, test_dataloader, sizes = getDataLoader(args.dataset_dir, args.use_dropped_data, args.batch_size, args.image_size)
+    vocab_size, user_size = sizes # unpack tuple
     # load config
     config = Config(args.model_config)
     # for k, v in config.items():
@@ -58,15 +60,17 @@ if __name__ == "__main__":
     titleModel = posterModel = uratingModel = None
     if args.title_model != "None":
         titleParam = config[args.title_model]
-        titleParam['input_size'] = train_dataloader.dataset.vocab_size
+        titleParam['input_size'] = vocab_size
         titleModel = availableTitleModels[args.title_model](**titleParam)
     if args.poster_model != "None":
         posterParam = config[args.poster_model]
         if 'image_size' in posterParam:
             posterParam['image_size'] = args.image_size
-        posterModel = availablePosterModels[args.poster_model](**config[args.poster_model])
+        posterModel = availablePosterModels[args.poster_model](**posterParam)
     if args.urating_model != "None":
-        uratingModel = availableURatingModels[args.urating_model](**config[args.urating_model])
+        urParam = config[args.urating_model]
+        urParam['input_size'] = user_size
+        uratingModel = availableURatingModels[args.urating_model](**urParam)
     model = theModel(titleModel, posterModel, uratingModel)
 
     # train
