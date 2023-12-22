@@ -239,18 +239,19 @@ class multilabelLogisticRegression():
    pass
 
 class simpleNN(nn.Module):
-    def __init__(self, input_shape, output_shape) -> None:
+    def __init__(self, input_shape, output_shape, dec_speed=4) -> None:
         super(simpleNN, self).__init__()
         self.input_shape = input_shape
         self.output_shape = output_shape
         print('simpleNN', input_shape, output_shape)
 
         self.core = nn.Sequential()
-        while input_shape >= 16*output_shape:
-            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//4))
-            print(f'linear{input_shape} to {input_shape//4}')
-            self.core.add_module(f'relu{input_shape//4}', nn.ReLU())
-            input_shape //= 4
+        t = dec_speed
+        while input_shape >= t*t*output_shape:
+            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//t))
+            print(f'linear{input_shape} to {input_shape//t}')
+            self.core.add_module(f'relu{input_shape//t}', nn.ReLU())
+            input_shape //= t
         self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, output_shape))
         print(f'linear{input_shape} to {output_shape}')
 

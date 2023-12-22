@@ -26,3 +26,4 @@ DenseNet169:
 simpleNN:
   input_shape: 6040
   output_shape: 18
+  dec_speed: 2
