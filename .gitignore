@@ -1,6 +1,6 @@
 # /dataset/
 /model/lightning_logs/
-/model/saved_models/
+# /model/saved_models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
