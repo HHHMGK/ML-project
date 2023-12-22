@@ -1,0 +1,24 @@
+LSTM:
+  input_size: 4071
+  hidden_size: 128
+  num_layers: 2
+  bidirectional: True
+  num_labels: 18
+
+TinyVGG:
+  input_shape: 3
+  hidden_units: 32
+  image_size: 224
+  num_labels: 18
+
+VGG16:
+  num_classes: 1000
+  batch_norm: False
+
+DenseNet121:
+  input_shape: 3
+  output_shape: 18
+
+DenseNet169:
+  input_shape: 3
+  output_shape: 18

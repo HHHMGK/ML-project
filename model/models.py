@@ -1,5 +1,4 @@
 import torch
-torch.cuda.current_device()
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
@@ -25,32 +24,27 @@ def getModel(name, param, device='cpu'):
 
 
 class theModel(pl.LightningModule):
-    def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), urModelName = None, urParam = None, num_labels=18, device='cpu'):
-        """
-        The main model combining the title and poster model
-        :param tuple titleParam: (input_size : int, hidden_size : int, num_layers : int, bidirectional : bool, num_labels : int)
-        :param tuple posterParam: (input_shape: int, hidden_units: int, num_labels : int)
-        """
+    # def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), urModelName = None, urParam = None, num_labels=18, device='cpu'):
+    def __init__(self, titleModel, posterModel, userRatingModel, num_labels=18):
         super(theModel, self).__init__()
-        self.dev = device  # device variable was taken, so using dev instead :(
         self.num_labesls = num_labels
         
-        self.titleModel = getModel(titleModelName, titleParam, device=self.dev)
-        self.posterModel = getModel(posterModelName, posterParam, device=self.dev)
-        self.urModel = None
+        self.titleModel = titleModel
+        self.posterModel = posterModel
+        self.userRatingModel = userRatingModel
         #TODO: add user rating models
 
         # Assembling
         self.fc = nn.Linear(2*self.num_labesls, self.num_labesls)
 
     def forward(self, title, poster, user_rating):
-        Tout = Pout = Uout = torch.tensor([])
+        Tout = Pout = Uout = torch.tensor([]).to(self.device)
         if self.titleModel != None:
             Tout = self.titleModel(title)
         if self.posterModel != None:
             Pout = self.posterModel(poster)
-        if self.urModel != None:
-            Uout = self.urModel(user_rating)
+        if self.userRatingModel != None:
+            Uout = self.userRatingModel(user_rating)
         # Assembling
         out = self.fc(torch.cat((Tout, Pout, Uout), dim=1))
         return out
@@ -77,11 +71,13 @@ class theModel(pl.LightningModule):
         return output, genre_tensor
 
     def getItemFromBatch(self, batch, idx):
-        title, img, ur, genres = batch
-        title_tensor = title.clone().detach().to(self.dev)
-        img_tensor = img.clone().detach().to(self.dev)
-        ur_tensor = ur.clone().detach().to(self.dev)
-        genre_tensor = genres.clone().detach().to(self.dev)
+        # title, img, ur, genres = batch
+        title, img, genres = batch
+        title_tensor = title.clone().detach().to(self.device)
+        img_tensor = img.clone().detach().to(self.device)
+        # ur_tensor = ur.clone().detach().to(self.device)
+        ur_tensor = torch.tensor([]).to(self.device)
+        genre_tensor = genres.clone().detach().to(self.device)
         return title_tensor, img_tensor, ur_tensor, genre_tensor
     
     def configure_optimizers(self):
@@ -128,12 +124,13 @@ class LSTM(nn.Module):
         return Tout       
 
 class TinyVGG(nn.Module):
-    def __init__(self, input_shape=3, hidden_units=32, IMAGE_SIZE=(224,224), num_labels=18) -> None:
+    def __init__(self, input_shape=3, hidden_units=32, image_size=256, num_labels=18) -> None:
         super(TinyVGG, self).__init__()
-        print('TinyVGG', input_shape, hidden_units, IMAGE_SIZE, num_labels)
         self.input_shape = input_shape
         self.hidden_units = hidden_units
         self.num_labesls = num_labels
+        self.IMAGE_SIZE = (image_size, image_size)
+        print('TinyVGG', input_shape, hidden_units, self.IMAGE_SIZE, num_labels)
 
         self.conv_block_1 = nn.Sequential(
             nn.Conv2d(in_channels=self.input_shape, out_channels=self.hidden_units,
@@ -156,7 +153,7 @@ class TinyVGG(nn.Module):
         self.classifier = nn.Sequential(
             nn.Flatten(),
             nn.Linear(in_features=self.hidden_units *
-                      int(IMAGE_SIZE[0]/4)*int(IMAGE_SIZE[0]/4), out_features=1024),
+                      int(self.IMAGE_SIZE[0]/4)*int(self.IMAGE_SIZE[0]/4), out_features=1024),
             nn.ReLU(),
             nn.Linear(in_features=1024, out_features=512),
             nn.ReLU(),
@@ -177,6 +174,7 @@ class TinyVGG(nn.Module):
 class DenseNet121Model(nn.Module):
   def __init__(self, input_shape: int, output_shape: int):
     super().__init__()
+    print('DenseNet121', input_shape, output_shape)
     self.model = densenet121(weights=DenseNet121_Weights.DEFAULT)
     self.model.classifier = nn.Sequential(
         nn.Linear(in_features=1024, out_features=512),
@@ -197,6 +195,7 @@ class DenseNet121Model(nn.Module):
 class DenseNet169Model(nn.Module):
   def __init__(self, input_shape: int, output_shape: int):
     super().__init__()
+    print('DenseNet169', input_shape, output_shape)
     self.model = densenet169(weights=DenseNet169_Weights.DEFAULT)
     self.model.classifier = nn.Sequential(
         # densenet 169
@@ -222,6 +221,7 @@ class DenseNet169Model(nn.Module):
 class VGG16Model(nn.Module):
   def __init__(self, input_shape: int, output_shape: int):
     super().__init__()
+    print('VGG16', input_shape, output_shape)
     self.model = vgg16(weights=VGG16_Weights.DEFAULT)
     self.model.classifier = nn.Sequential(
         nn.Linear(in_features=25088, out_features=1024),
