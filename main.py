@@ -93,6 +93,8 @@ if __name__ == "__main__":
         ckpt_path = args.checkpoint
         if ckpt_path.count('/') ==0:
             ckpt_path = args.saved_model_dir + ckpt_path
+        if not ckpt_path.endswith('.ckpt'):
+            ckpt_path += '.ckpt'
         res = trainer.predict(model, dataloaders=test_dataloader, ckpt_path=ckpt_path)
 
         pred = torch.cat([ep[0] for ep in res])
