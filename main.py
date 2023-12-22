@@ -3,6 +3,7 @@ from model.models import *
 from utils.config import Config 
 from utils.dataset import *
 from utils.metrics import *
+from torchsummary import summary
 
 availableTitleModels = {
     "LSTM": LSTM,
@@ -46,6 +47,8 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
     # create directory if not exist
     os.makedirs(args.saved_model_dir, exist_ok=True)
     # load dataset
@@ -61,18 +64,20 @@ if __name__ == "__main__":
     if args.title_model != "None":
         titleParam = config[args.title_model]
         titleParam['input_size'] = vocab_size
-        titleModel = availableTitleModels[args.title_model](**titleParam)
+        titleModel = availableTitleModels[args.title_model](**titleParam).to(device)
+        summary(titleModel, (1, vocab_size))
     if args.poster_model != "None":
         posterParam = config[args.poster_model]
         if 'image_size' in posterParam:
             posterParam['image_size'] = args.image_size
-        posterModel = availablePosterModels[args.poster_model](**posterParam)
+        posterModel = availablePosterModels[args.poster_model](**posterParam).to(device)
+        summary(posterModel, (3, args.image_size, args.image_size))
     if args.urating_model != "None":
         urParam = config[args.urating_model]
-        urParam['input_size'] = user_size
-        uratingModel = availableURatingModels[args.urating_model](**urParam)
+        urParam['input_shape'] = user_size
+        uratingModel = availableURatingModels[args.urating_model](**urParam).to(device)
+        summary(uratingModel, (1, user_size))
     model = theModel(titleModel, posterModel, uratingModel)
-
     # train
     if args.run_mode == "train":
         trainer = pl.Trainer(max_epochs=args.max_epochs, default_root_dir=args.saved_model_dir)

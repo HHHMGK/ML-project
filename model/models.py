@@ -5,7 +5,6 @@ import torch.optim as optim
 import pytorch_lightning as pl
 from torchvision.models import DenseNet121_Weights, densenet121, DenseNet169_Weights, densenet169, VGG16_Weights, vgg16
 
-
 def getModel(name, param, device='cpu'):
     if name == 'LSTM':
         return LSTM(*param).to(device)
@@ -31,10 +30,10 @@ class theModel(pl.LightningModule):
         self.titleModel = titleModel
         self.posterModel = posterModel
         self.userRatingModel = userRatingModel
-        #TODO: add user rating models
 
         # Assembling
-        self.fc = nn.Linear(2*self.num_labesls, self.num_labesls)
+        t = int(titleModel != None) + int(posterModel != None) + int(userRatingModel != None)
+        self.fc = nn.Linear(t*self.num_labesls, self.num_labesls)
 
     def forward(self, title, poster, user_rating):
         Tout = Pout = Uout = torch.tensor([]).to(self.device)
@@ -247,13 +246,15 @@ class simpleNN(nn.Module):
         print('simpleNN', input_shape, output_shape)
 
         self.core = nn.Sequential()
-        while input_shape > 4*output_shape:
-            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//2))
-            self.core.add_module(f'relu{input_shape}', nn.ReLU())
-            input_shape //= 2
+        while input_shape >= 16*output_shape:
+            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//4))
+            print(f'linear{input_shape} to {input_shape//4}')
+            self.core.add_module(f'relu{input_shape//4}', nn.ReLU())
+            input_shape //= 4
         self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, output_shape))
+        print(f'linear{input_shape} to {output_shape}')
 
-    def forward(self, title):
-        out = self.core(title)
+    def forward(self, x):
+        out = self.core(x)
         return out
    

@@ -10,7 +10,7 @@ from torchvision import transforms
 def getDataLoader(dataset_dir, use_dropped_data=False, batch_size=32, img_size='256', NUM_WORKERS = os.cpu_count()):
     posterTransformer = getImgTransformer(size='256')
     movies_train, movies_test, movies_val, ratings, genres_list = load_data(dataset_dir, use_dropped_data)
-    maxUserID = len(ratings.index)
+    maxUserID = len(ratings['userid'].unique())
     train = theDataset(movies_train, ratings, posterTransformer, genres_list, maxUserID)
     val = theDataset(movies_val, ratings, posterTransformer, genres_list, maxUserID)
     test = theDataset(movies_test, ratings, posterTransformer, genres_list, maxUserID)
@@ -52,12 +52,13 @@ class theDataset(Dataset):
         # rating process 
         self.user_ratings = {}
         for movie_id in df['movieid']:
-            rating_for_current_movie = np.zeros(maxUserID)
+            rating_for_current_movie = np.zeros(maxUserID, dtype=np.float32)
             rated_users = allRatingdf.loc[allRatingdf['movieid'] == movie_id].userid.tolist()
             rated_v = allRatingdf['rating'].values
             for user in rated_users:
-                rating_for_current_movie[user - 1] = int(rated_v[user])
+                rating_for_current_movie[user - 1] = float(rated_v[user])
             self.user_ratings[movie_id] = rating_for_current_movie
+            # print(rating_for_current_movie.dtype)
             
         # genres process
         if genres_list == None:
