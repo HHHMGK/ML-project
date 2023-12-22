@@ -39,8 +39,8 @@ if __name__ == "__main__":
     # arguments for training only
     parser.add_argument("--max_epochs", type=int, default=20, help="Specify the number of epochs to train the model")
     parser.add_argument("--saved_model_dir", type=str, default="model/saved_models/", help="Location to save the model after training(checkpoint)")
-    # arguments for testing only
-    parser.add_argument("--checkpoint", type=str, default=None, help="Specify to load the checkpoint into model.")
+    
+    parser.add_argument("--checkpoint", type=str, default=None, help="Specify where and the name of checkpoint fike to save/load.")
     # # arguments for inference only
     # parser.add_argument("--input_file", type=str, help="Infer mode: Provide the location of Input file")
     # parser.add_argument("--prediction_file", type=str, help="Infer mode: Provide location of Output file which is predicted from Input file")
@@ -80,13 +80,20 @@ if __name__ == "__main__":
     model = theModel(titleModel, posterModel, uratingModel)
     # train
     if args.run_mode == "train":
-        trainer = pl.Trainer(max_epochs=args.max_epochs, default_root_dir=args.saved_model_dir)
+        cp = pl.callbacks.ModelCheckpoint(
+            dirpath = args.saved_model_dir,
+            filename = args.checkpoint,
+        )
+        trainer = pl.Trainer(max_epochs=args.max_epochs, default_root_dir=args.saved_model_dir, callbacks=[cp])
         trainer.fit(model, train_dataloader, val_dataloader)
     
     # test
     if args.run_mode == "test":
         trainer = pl.Trainer()
-        res = trainer.predict(model, dataloaders=test_dataloader, ckpt_path=args.checkpoint)
+        ckpt_path = args.checkpoint
+        if ckpt_path.count('/') ==0:
+            ckpt_path = args.saved_model_dir + ckpt_path
+        res = trainer.predict(model, dataloaders=test_dataloader, ckpt_path=ckpt_path)
 
         pred = torch.cat([ep[0] for ep in res])
         truth = torch.cat([ep[1] for ep in res])
