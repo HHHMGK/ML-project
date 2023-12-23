@@ -3,7 +3,7 @@ from model.models import *
 from utils.config import Config 
 from utils.dataset import *
 from utils.metrics import *
-from torchsummary import summary
+from torchinfo import summary
 
 availableTitleModels = {
     "LSTM": LSTM,
@@ -54,6 +54,7 @@ if __name__ == "__main__":
     # load dataset
     train_dataloader, val_dataloader, test_dataloader, sizes = getDataLoader(args.dataset_dir, args.use_dropped_data, args.batch_size, args.image_size)
     vocab_size, user_size = sizes # unpack tuple
+    print("Sizes:     ", vocab_size, user_size)
     # load config
     config = Config(args.model_config)
     # for k, v in config.items():
@@ -65,22 +66,23 @@ if __name__ == "__main__":
         titleParam = config[args.title_model]
         titleParam['input_size'] = vocab_size
         titleModel = availableTitleModels[args.title_model](**titleParam).to(device)
-        summary(titleModel, (1, vocab_size))
+        # summary(titleModel, (1, vocab_size))
     if args.poster_model != "None":
         posterParam = config[args.poster_model]
         if 'image_size' in posterParam:
             posterParam['image_size'] = args.image_size
         posterModel = availablePosterModels[args.poster_model](**posterParam).to(device)
-        summary(posterModel, (3, args.image_size, args.image_size))
+        # summary(posterModel, (3, args.image_size, args.image_size))
     if args.urating_model != "None":
         urParam = config[args.urating_model]
         urParam['input_shape'] = user_size
         uratingModel = availableURatingModels[args.urating_model](**urParam).to(device)
-        summary(uratingModel, (1, user_size))
+        # summary(uratingModel, (1, user_size))
     model = theModel(titleModel, posterModel, uratingModel)
     # train
     if args.run_mode == "train":
         cp = pl.callbacks.ModelCheckpoint(
+            save_top_k = 1,
             dirpath = args.saved_model_dir,
             filename = args.checkpoint,
         )

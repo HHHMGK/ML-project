@@ -244,7 +244,7 @@ class simpleNN(nn.Module):
         self.input_shape = input_shape
         self.output_shape = output_shape
         print('simpleNN', input_shape, output_shape)
-
+    
         self.core = nn.Sequential()
         t = dec_speed
         while input_shape >= t*t*output_shape:
