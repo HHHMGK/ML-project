@@ -4,20 +4,28 @@ import torch.nn.functional as F
 import torch.optim as optim
 import pytorch_lightning as pl
 from torchvision.models import DenseNet121_Weights, densenet121, DenseNet169_Weights, densenet169, VGG16_Weights, vgg16
+from utils.metrics import get_metrics
+
 
 class theModel(pl.LightningModule):
     # def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), urModelName = None, urParam = None, num_labels=18, device='cpu'):
-    def __init__(self, titleModel, posterModel, userRatingModel, num_labels=18):
+    def __init__(self, titleModel, posterModel, userRatingModel, num_labels=18, metric_threshold=0.5):
         super(theModel, self).__init__()
         self.num_labesls = num_labels
-        
+        self.metric_threshold = metric_threshold
+
         self.titleModel = titleModel
         self.posterModel = posterModel
         self.userRatingModel = userRatingModel
 
         # Assembling
         t = int(titleModel != None) + int(posterModel != None) + int(userRatingModel != None)
-        self.fc = nn.Linear(t*self.num_labesls, self.num_labesls)
+        if t > 1:
+            self.fc = nn.Linear(t*self.num_labesls, self.num_labesls)
+        else:
+            self.fc = nn.Identity()
+
+        self.save_hyperparameters()
 
     def forward(self, title, poster, user_rating):
         Tout = Pout = Uout = torch.tensor([]).to(self.device)
@@ -36,7 +44,22 @@ class theModel(pl.LightningModule):
 
         output = self.forward(title_tensor, img_tensor, ur_tensor)
         loss = self.loss_fnc(output, genre_tensor)
+        self.log('train_loss', loss)
+        self.training_step_output = output, genre_tensor
         return loss
+    
+    def on_train_epoch_end(self):
+        output, truth = self.training_step_output
+        met = get_metrics(output, truth, self.metric_threshold, self.device)
+        self.log('train_f1ma', met[0], on_epoch= True)
+        self.log('train_f1mi', met[1], on_epoch= True)
+        self.log('train_acc', met[2], on_epoch= True)
+        self.log('train_prec', met[3], on_epoch= True)
+        self.log('train_rec', met[4], on_epoch= True)
+
+        # self.training_step_output.clear()
+
+
 
     def validation_step(self, val_batch, batch_idx):
         title_tensor, img_tensor, ur_tensor, genre_tensor = self.getItemFromBatch(val_batch, batch_idx)
@@ -44,6 +67,13 @@ class theModel(pl.LightningModule):
         output = self.forward(title_tensor, img_tensor, ur_tensor)
         loss = self.loss_fnc(output, genre_tensor)
         self.log('val_loss', loss)
+        met = get_metrics(output, genre_tensor, self.metric_threshold, self.device)
+        self.log('val_f1ma', met[0])
+        self.log('val_f1mi', met[1])
+        self.log('val_acc', met[2])
+        self.log('val_prec', met[3])
+        self.log('val_rec', met[4])
+        
         # print('val_loss', loss)
 
     def predict_step(self, test_batch, batch_idx):
@@ -69,7 +99,7 @@ class theModel(pl.LightningModule):
         return F.cross_entropy(logits, labels)
 
 class LSTM(nn.Module):
-    def __init__(self, input_size=4071, hidden_size=128, num_layers=2, bidirectional=True, num_labels=18) -> None:
+    def __init__(self, input_size=4071, hidden_size=128, num_layers=2, bidirectional=True, num_labels=18, dec_speed=2) -> None:
         super(LSTM, self).__init__()
         print('LSTM', input_size, hidden_size, num_layers, bidirectional, num_labels)
         self.input_size = input_size
@@ -88,7 +118,7 @@ class LSTM(nn.Module):
         if self.bidirectional:
             linear_size *= 2
 
-        self.classifier = FNN(linear_size, self.num_labesls, dec_speed=4, use_relu=True, use_bnorm=True)
+        self.classifier = FNN(linear_size, self.num_labesls, dec_speed=dec_speed, use_relu=True, use_bnorm=True)
 
     def forward(self, title):
         Tout, _ = self.core(title)

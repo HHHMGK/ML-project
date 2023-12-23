@@ -1,4 +1,9 @@
 import torch
+from torchmetrics.classification import MultilabelF1Score
+from torchmetrics.classification import MultilabelAccuracy
+from torchmetrics.classification import MultilabelPrecision
+from torchmetrics.classification import MultilabelRecall
+
 
 def P_at_K(k, pred, truth):
     # print(pred)
@@ -41,9 +46,6 @@ def print_metrics(pred, truth, thres=0.5):
     print('MAP@4 ', MAP_at_K(4, pred, truth))
 
     print("--------------------------------------")
-    from torchmetrics.functional.classification import multilabel_f1_score
-    from torchmetrics.classification import MultilabelF1Score
-
 
     # f1arr = []
     # for thres in range(1, 20):
@@ -63,18 +65,24 @@ def print_metrics(pred, truth, thres=0.5):
 
     print("--------------------------------------")
     # from torchmetrics.functional.classification import multilabel_accuracy
-    from torchmetrics.classification import MultilabelAccuracy
     acc = MultilabelAccuracy(num_labels=18, threshold=thres)
     print('Accuracy :', acc(pred, truth).tolist())
 
     print("--------------------------------------")
     # from torchmetrics.functional.classification import multilabel_precision
-    from torchmetrics.classification import MultilabelPrecision
     prec = MultilabelPrecision(num_labels=18, threshold=thres, average='macro')
     print('Precision :', prec(pred, truth).tolist())
 
     print("--------------------------------------")
     # from torchmetrics.functional.classification import multilabel_recall
-    from torchmetrics.classification import MultilabelRecall
     rec = MultilabelRecall(num_labels=18, threshold=thres, average='macro')
     print('Recall :', rec(pred, truth).tolist())
+
+def get_metrics(pred, truth, thres=0.5, device='cpu'):
+    f1ma = MultilabelF1Score(num_labels=18, threshold=thres, average='macro').to(device)
+    f1mi = MultilabelF1Score(num_labels=18, threshold=thres, average='micro').to(device)
+    acc = MultilabelAccuracy(num_labels=18, threshold=thres).to(device)
+    prec = MultilabelPrecision(num_labels=18, threshold=thres, average='macro').to(device)
+    rec = MultilabelRecall(num_labels=18, threshold=thres, average='macro').to(device)
+
+    return f1ma(pred, truth).tolist(), f1mi(pred, truth).tolist(), acc(pred, truth).tolist(), prec(pred, truth).tolist(), rec(pred, truth).tolist()

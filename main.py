@@ -4,6 +4,8 @@ from utils.config import Config
 from utils.dataset import *
 from utils.metrics import *
 from torchinfo import summary
+import wandb
+from lightning.pytorch.loggers import WandbLogger
 
 availableTitleModels = {
     "LSTM": LSTM,
@@ -25,7 +27,7 @@ availableURatingModels = {
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Main argument parser")
-    parser.add_argument("run_mode", choices=("train", "test"), help="Main running mode of the program")
+    parser.add_argument("run_mode", choices=("train", "test", "train_test"), help="Main running mode of the program")
     # arguments for model
     parser.add_argument("--title_model", type=str,  default="None", choices=availableTitleModels.keys(), help="The type of model to be ran")
     parser.add_argument("--poster_model", type=str,  default="None", choices=availablePosterModels.keys(), help="The type of model to be ran")
@@ -79,21 +81,46 @@ if __name__ == "__main__":
         uratingModel = availableURatingModels[args.urating_model](**urParam).to(device)
         # summary(uratingModel, (1, user_size))
     model = theModel(titleModel, posterModel, uratingModel)
+
+
+
     # train
-    if args.run_mode == "train":
+    if args.run_mode == "train" or args.run_mode == "train_test":
+        wandb.login()
+        wandb_logger = WandbLogger(
+            project="movie-genre-prediction",
+            name=args.checkpoint,
+            log_model=True,
+            checkpoint_name=args.checkpoint,
+            # config={
+            #     "title_model": args.title_model,
+            #     "poster_model": args.poster_model,
+            #     "urating_model": args.urating_model,
+            #     "use_dropped_data": args.use_dropped_data,
+            #     "checkoint": args.checkpoint,
+            #     "batch_size": args.batch_size,
+            #     "image_size": args.image_size,
+            #     "max_epochs": args.max_epochs
+            # },
+        )
         cp = pl.callbacks.ModelCheckpoint(
             save_top_k = 1,
             dirpath = args.saved_model_dir,
             filename = args.checkpoint,
         )
-        trainer = pl.Trainer(max_epochs=args.max_epochs, default_root_dir=args.saved_model_dir, callbacks=[cp])
+        trainer = pl.Trainer(
+            max_epochs=args.max_epochs, 
+            default_root_dir=args.saved_model_dir, 
+            callbacks=[cp],
+            logger=wandb_logger,
+        )
         trainer.fit(model, train_dataloader, val_dataloader)
         # if the ckpt file has "-v1" at the end, remove it
         if os.path.exists(args.saved_model_dir + args.checkpoint + "-v1.ckpt"):
             os.rename(args.saved_model_dir + args.checkpoint + "-v1.ckpt", args.saved_model_dir + args.checkpoint + ".ckpt")
     
     # test
-    if args.run_mode == "test":
+    if args.run_mode == "test" or args.run_mode == "train_test":
         trainer = pl.Trainer()
         ckpt_path = args.checkpoint
         if ckpt_path.count('/') ==0:

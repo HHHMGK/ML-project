@@ -4,6 +4,7 @@ LSTM:
   num_layers: 2
   bidirectional: True
   num_labels: 18
+  dec_speed: 2
 
 TinyVGG:
   input_shape: 3
