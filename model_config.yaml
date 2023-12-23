@@ -23,7 +23,7 @@ DenseNet169:
   input_shape: 3
   output_shape: 18
 
-simpleNN:
+FNN:
   input_shape: 6040
   output_shape: 18
   dec_speed: 2

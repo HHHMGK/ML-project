@@ -17,7 +17,7 @@ availablePosterModels = {
     "None": None
 }
 availableURatingModels = {
-    "simpleNN": simpleNN,
+    "FNN": FNN,
     "None": None
 }
 
@@ -88,6 +88,9 @@ if __name__ == "__main__":
         )
         trainer = pl.Trainer(max_epochs=args.max_epochs, default_root_dir=args.saved_model_dir, callbacks=[cp])
         trainer.fit(model, train_dataloader, val_dataloader)
+        # if the ckpt file has "-v1" at the end, remove it
+        if os.path.exists(args.saved_model_dir + args.checkpoint + "-v1.ckpt"):
+            os.rename(args.saved_model_dir + args.checkpoint + "-v1.ckpt", args.saved_model_dir + args.checkpoint + ".ckpt")
     
     # test
     if args.run_mode == "test":
@@ -97,6 +100,7 @@ if __name__ == "__main__":
             ckpt_path = args.saved_model_dir + ckpt_path
         if not ckpt_path.endswith('.ckpt'):
             ckpt_path += '.ckpt'
+        print('Loading checkpoint from ', ckpt_path)
         res = trainer.predict(model, dataloaders=test_dataloader, ckpt_path=ckpt_path)
 
         pred = torch.cat([ep[0] for ep in res])

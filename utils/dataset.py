@@ -51,12 +51,15 @@ class theDataset(Dataset):
 
         # rating process 
         self.user_ratings = {}
+        rated_v = allRatingdf['rating'].values
         for movie_id in df['movieid']:
             rating_for_current_movie = np.zeros(maxUserID, dtype=np.float32)
-            rated_users = allRatingdf.loc[allRatingdf['movieid'] == movie_id].userid.tolist()
-            rated_v = allRatingdf['rating'].values
-            for user in rated_users:
-                rating_for_current_movie[user - 1] = float(rated_v[user])
+            rating_index = allRatingdf.index[allRatingdf['movieid'] == movie_id].tolist()
+            rated_user = allRatingdf['userid'][rating_index].to_dict()
+            for index in rating_index:
+                # userid = allRatingdf['userid'][index]
+                userid = rated_user[index]
+                rating_for_current_movie[userid-1] = rated_v[index]
             self.user_ratings[movie_id] = rating_for_current_movie
             # print(rating_for_current_movie.dtype)
             

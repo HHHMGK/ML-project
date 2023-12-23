@@ -162,3 +162,14 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+lightning_logs/version_13/hparams.yaml
+lightning_logs/version_14/hparams.yaml
+lightning_logs/version_15/hparams.yaml
+lightning_logs/version_16/hparams.yaml
+lightning_logs/version_17/hparams.yaml
+lightning_logs/version_18/hparams.yaml
+lightning_logs/version_19/hparams.yaml
+lightning_logs/version_20/hparams.yaml
+lightning_logs/version_21/hparams.yaml
+lightning_logs/version_22/hparams.yaml
+lightning_logs/version_23/hparams.yaml

@@ -5,22 +5,6 @@ import torch.optim as optim
 import pytorch_lightning as pl
 from torchvision.models import DenseNet121_Weights, densenet121, DenseNet169_Weights, densenet169, VGG16_Weights, vgg16
 
-def getModel(name, param, device='cpu'):
-    if name == 'LSTM':
-        return LSTM(*param).to(device)
-    if name == 'TinyVGG':
-        return TinyVGG(*param).to(device)
-    if name == 'DenseNet121':
-        return DenseNet121Model(*param).to(device)
-    if name == 'DenseNet169':
-        return DenseNet169Model(*param).to(device)
-    if name == 'VGG16':
-        return VGG16Model(*param).to(device)
-    
-    print('Model not found')
-    return None
-
-
 class theModel(pl.LightningModule):
     # def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), urModelName = None, urParam = None, num_labels=18, device='cpu'):
     def __init__(self, titleModel, posterModel, userRatingModel, num_labels=18):
@@ -104,21 +88,14 @@ class LSTM(nn.Module):
         if self.bidirectional:
             linear_size *= 2
 
-        self.linear = nn.Sequential(
-            nn.Linear(linear_size, 64),
-            nn.ReLU(),
-            nn.Linear(64, 32),
-            nn.ReLU(),
-            nn.Linear(32, self.num_labesls),
-            # nn.ReLU()
-        )
+        self.classifier = FNN(linear_size, self.num_labesls, dec_speed=4, use_relu=True, use_bnorm=True)
 
     def forward(self, title):
         Tout, _ = self.core(title)
         # out = [batch_size, seq_len, hidden_size*bidirectional (vector size)]
         # => only take the last element (many to one RNN)
         Tout = Tout[:, -1, :]
-        Tout = self.linear(Tout)
+        Tout = self.classifier(Tout)
         return Tout       
 
 class TinyVGG(nn.Module):
@@ -174,18 +151,7 @@ class DenseNet121Model(nn.Module):
     super().__init__()
     print('DenseNet121', input_shape, output_shape)
     self.model = densenet121(weights=DenseNet121_Weights.DEFAULT)
-    self.model.classifier = nn.Sequential(
-        nn.Linear(in_features=1024, out_features=512),
-        nn.BatchNorm1d(512),
-        nn.ReLU(),
-        nn.Linear(in_features=512, out_features=256),
-        nn.BatchNorm1d(256),
-        nn.ReLU(),
-        nn.Linear(in_features=256, out_features=128),
-        nn.BatchNorm1d(128),
-        nn.ReLU(),
-        nn.Linear(in_features=128, out_features=output_shape)
-    )
+    self.model.classifier = FNN(1024, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
     return self.model(x)
@@ -195,23 +161,7 @@ class DenseNet169Model(nn.Module):
     super().__init__()
     print('DenseNet169', input_shape, output_shape)
     self.model = densenet169(weights=DenseNet169_Weights.DEFAULT)
-    self.model.classifier = nn.Sequential(
-        # densenet 169
-        nn.Linear(in_features=1664, out_features=1024),
-        nn.ReLU(),
-    )
-    self.classifier = nn.Sequential(
-        nn.Linear(in_features=1024, out_features=512),
-        nn.BatchNorm1d(512),
-        nn.ReLU(),
-        nn.Linear(in_features=512, out_features=256),
-        nn.BatchNorm1d(256),
-        nn.ReLU(),
-        nn.Linear(in_features=256, out_features=128),
-        nn.BatchNorm1d(128),
-        nn.ReLU(),
-        nn.Linear(in_features=128, out_features=output_shape)
-    )
+    self.model.classifier = FNN(1664, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
     return self.classifier(self.model(x))
@@ -221,17 +171,8 @@ class VGG16Model(nn.Module):
     super().__init__()
     print('VGG16', input_shape, output_shape)
     self.model = vgg16(weights=VGG16_Weights.DEFAULT)
-    self.model.classifier = nn.Sequential(
-        nn.Linear(in_features=25088, out_features=1024),
-        nn.ReLU(),
-        nn.Linear(in_features=1024, out_features=512),
-        nn.ReLU(),
-        nn.Linear(in_features=512, out_features=256),
-        nn.ReLU(),
-        nn.Linear(in_features=256, out_features=128),
-        nn.ReLU(),
-        nn.Linear(in_features=128, out_features=output_shape)
-    )
+    self.model.classifier = FNN(25088, output_shape, dec_speed=4, use_relu=True)
+
 
   def forward(self, x):
     return self.model(x)
@@ -245,17 +186,29 @@ class simpleNN(nn.Module):
         self.output_shape = output_shape
         print('simpleNN', input_shape, output_shape)
     
-        self.core = nn.Sequential()
-        t = dec_speed
-        while input_shape >= t*t*output_shape:
-            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//t))
-            print(f'linear{input_shape} to {input_shape//t}')
-            self.core.add_module(f'relu{input_shape//t}', nn.ReLU())
-            input_shape //= t
-        self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, output_shape))
-        print(f'linear{input_shape} to {output_shape}')
+        self.core = FNN(input_shape, output_shape, dec_speed, use_relu=True)
 
     def forward(self, x):
         out = self.core(x)
         return out
    
+class FNN(nn.Module):
+    def __init__(self, input_shape, output_shape, dec_speed, use_relu = False, use_bnorm = False) -> None:
+        super(FNN, self).__init__()
+        print(f'linear from {input_shape} to {output_shape} with dec_speed {dec_speed}')
+    
+        self.core = nn.Sequential()
+        t = dec_speed
+        while input_shape >= t*t*output_shape:
+            self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//t))
+            if use_relu:
+                self.core.add_module(f'relu{input_shape//t}', nn.ReLU())
+            if use_bnorm:
+                self.core.add_module(f'bnorm{input_shape//t}', nn.BatchNorm1d(input_shape//t))
+            input_shape //= t
+        self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, output_shape))
+        
+
+    def forward(self, x):
+        out = self.core(x)
+        return out
