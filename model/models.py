@@ -208,7 +208,7 @@ class DenseNet169Model(nn.Module):
         param.requires_grad = False
     else:
       self.model = densenet169()
-    self.classifier = FNN(1664, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
+    self.classifier = FNN(1000, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
     out = self.model(x)
