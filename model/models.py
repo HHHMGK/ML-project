@@ -194,7 +194,7 @@ class DenseNet169Model(nn.Module):
     self.model.classifier = FNN(1664, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
-    return self.classifier(self.model(x))
+    return self.model(x)
 
 class VGG16Model(nn.Module):
   def __init__(self, input_shape: int, output_shape: int):
