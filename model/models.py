@@ -9,7 +9,7 @@ from utils.metrics import get_metrics
 
 class theModel(pl.LightningModule):
     # def __init__(self, titleModelName = 'LSTM', titleParam = (4071, 128, 2, True, 18), posterModelName = 'TinyVGG', posterParam = (3, 32, 18), urModelName = None, urParam = None, num_labels=18, device='cpu'):
-    def __init__(self, titleModel, posterModel, userRatingModel, num_labels=18, metric_threshold=0.5):
+    def __init__(self, titleModel, posterModel, userRatingModel, combine_mode, num_labels=18, metric_threshold=0.5):
         super(theModel, self).__init__()
         self.num_labesls = num_labels
         self.metric_threshold = metric_threshold
@@ -18,13 +18,13 @@ class theModel(pl.LightningModule):
         self.posterModel = posterModel
         self.userRatingModel = userRatingModel
 
-        # Assembling
-        t = int(titleModel != None) + int(posterModel != None) + int(userRatingModel != None)
-        if t > 1:
-            self.fc = nn.Linear(t*self.num_labesls, self.num_labesls)
-        else:
-            self.fc = nn.Identity()
+        self.fc = nn.Identity()
 
+        # Combining
+        if combine_mode == 'concat':
+            t = int(titleModel != None) + int(posterModel != None) + int(userRatingModel != None)
+            if t > 1:
+                self.fc = nn.Linear(t*self.num_labesls, self.num_labesls)
         # self.save_hyperparameters()
 
     def forward(self, title, poster, user_rating):
@@ -35,8 +35,12 @@ class theModel(pl.LightningModule):
             Pout = self.posterModel(poster)
         if self.userRatingModel != None:
             Uout = self.userRatingModel(user_rating)
-        # Assembling
-        out = self.fc(torch.cat((Tout, Pout, Uout), dim=1))
+        # Combining
+        if self.combine_mode == 'concat':
+            out = torch.cat((Tout, Pout, Uout), dim=1)
+        else:
+            out = Tout*0.15 + Pout*0.20 + Uout*0.65
+        out = self.fc(out)
         return out
 
     def training_step(self, train_batch, batch_idx):

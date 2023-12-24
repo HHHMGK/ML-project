@@ -29,10 +29,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Main argument parser")
     parser.add_argument("run_mode", choices=("train", "test", "train_test"), help="Main running mode of the program")
     # arguments for model
-    parser.add_argument("--title_model", type=str,  default="None", choices=availableTitleModels.keys(), help="The type of model to be ran")
-    parser.add_argument("--poster_model", type=str,  default="None", choices=availablePosterModels.keys(), help="The type of model to be ran")
-    parser.add_argument("--urating_model", type=str,  default="None", choices=availableURatingModels.keys(), help="The type of model to be ran")
+    parser.add_argument("--title_model", type=str,  default="None", choices=availableTitleModels.keys(), help="The type of Title model to be ran")
+    parser.add_argument("--poster_model", type=str,  default="None", choices=availablePosterModels.keys(), help="The type of Poster model to be ran")
+    parser.add_argument("--urating_model", type=str,  default="None", choices=availableURatingModels.keys(), help="The type of User Rating model to be ran")
     parser.add_argument("--model_config", type=str, default="model_config.yaml", help="Specify the model config file to load")
+    parser.add_argument("--combine_mode", type=str, default="concat", choices=("concat", "add"), help="Specify the combine mode for title, poster and ur models")
     # arguments for dataset
     parser.add_argument("--dataset_dir", type=str, default="dataset/", help="Location of dataset")
     parser.add_argument("--use_dropped_data", type=bool, default=False, help="Choosing to use dropped data or not")
@@ -81,7 +82,7 @@ if __name__ == "__main__":
         print(urParam)
         uratingModel = availableURatingModels[args.urating_model](**urParam).to(device)
         # summary(uratingModel, (1, user_size))
-    model = theModel(titleModel, posterModel, uratingModel)
+    model = theModel(titleModel, posterModel, uratingModel, args.combine_mode).to(device)
 
 
 
