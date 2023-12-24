@@ -25,7 +25,7 @@ class theModel(pl.LightningModule):
         else:
             self.fc = nn.Identity()
 
-        self.save_hyperparameters()
+        # self.save_hyperparameters()
 
     def forward(self, title, poster, user_rating):
         Tout = Pout = Uout = torch.tensor([]).to(self.device)
@@ -48,14 +48,14 @@ class theModel(pl.LightningModule):
         self.training_step_output = output, genre_tensor
         return loss
     
-    def on_train_epoch_end(self):
-        output, truth = self.training_step_output
-        met = get_metrics(output, truth, self.metric_threshold, self.device)
-        self.log('train_f1ma', met[0], on_epoch= True)
-        self.log('train_f1mi', met[1], on_epoch= True)
-        self.log('train_acc', met[2], on_epoch= True)
-        self.log('train_prec', met[3], on_epoch= True)
-        self.log('train_rec', met[4], on_epoch= True)
+    # def on_train_epoch_end(self):
+    #     output, truth = self.training_step_output
+    #     met = get_metrics(output, truth, self.metric_threshold, self.device)
+    #     self.log('train_f1ma', met[0], on_epoch= True)
+    #     self.log('train_f1mi', met[1], on_epoch= True)
+    #     self.log('train_acc', met[2], on_epoch= True)
+    #     self.log('train_prec', met[3], on_epoch= True)
+    #     self.log('train_rec', met[4], on_epoch= True)
 
         # self.training_step_output.clear()
 
@@ -67,12 +67,12 @@ class theModel(pl.LightningModule):
         output = self.forward(title_tensor, img_tensor, ur_tensor)
         loss = self.loss_fnc(output, genre_tensor)
         self.log('val_loss', loss)
-        met = get_metrics(output, genre_tensor, self.metric_threshold, self.device)
-        self.log('val_f1ma', met[0])
-        self.log('val_f1mi', met[1])
-        self.log('val_acc', met[2])
-        self.log('val_prec', met[3])
-        self.log('val_rec', met[4])
+        # met = get_metrics(output, genre_tensor, self.metric_threshold, self.device)
+        # self.log('val_f1ma', met[0])
+        # self.log('val_f1mi', met[1])
+        # self.log('val_acc', met[2])
+        # self.log('val_prec', met[3])
+        # self.log('val_rec', met[4])
         
         # print('val_loss', loss)
 
@@ -206,8 +206,7 @@ class VGG16Model(nn.Module):
 
   def forward(self, x):
     return self.model(x)
-class multilabelLogisticRegression():
-   pass
+
 
 class simpleNN(nn.Module):
     def __init__(self, input_shape, output_shape, dec_speed=4) -> None:
@@ -223,7 +222,7 @@ class simpleNN(nn.Module):
         return out
    
 class FNN(nn.Module):
-    def __init__(self, input_shape, output_shape, dec_speed, use_relu = False, use_bnorm = False) -> None:
+    def __init__(self, input_shape, output_shape, dec_speed, use_relu = False, use_bnorm = False, dropout=0.0, _db_print_layers=False) -> None:
         super(FNN, self).__init__()
         print(f'linear from {input_shape} to {output_shape} with dec_speed {dec_speed}')
     
@@ -231,10 +230,20 @@ class FNN(nn.Module):
         t = dec_speed
         while input_shape >= t*t*output_shape:
             self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, input_shape//t))
+            if _db_print_layers:
+                print(f'linear{input_shape}', nn.Linear(input_shape, input_shape//t))
             if use_relu:
                 self.core.add_module(f'relu{input_shape//t}', nn.ReLU())
+                if _db_print_layers:
+                    print(f'relu()', nn.ReLU())
             if use_bnorm:
                 self.core.add_module(f'bnorm{input_shape//t}', nn.BatchNorm1d(input_shape//t))
+                if _db_print_layers:
+                    print(f'bnorm({input_shape//t})', nn.BatchNorm1d(input_shape//t))
+            if dropout > 0:
+                self.core.add_module(f'dropout{input_shape//t}', nn.Dropout(dropout))
+                if _db_print_layers:
+                    print(f'dropout({dropout})', nn.Dropout(dropout))
             input_shape //= t
         self.core.add_module(f'linear{input_shape}', nn.Linear(input_shape, output_shape))
         

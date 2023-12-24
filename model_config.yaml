@@ -27,4 +27,12 @@ DenseNet169:
 FNN:
   input_shape: 6040
   output_shape: 18
-  dec_speed: 2
+  dec_speed: 8
+  use_relu: True
+  use_bnorm: False
+  dropout: 0.2
+  _db_print_layers: False
+
+simpleNN:
+  input_shape: 6040
+  output_shape: 18

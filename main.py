@@ -78,6 +78,7 @@ if __name__ == "__main__":
     if args.urating_model != "None":
         urParam = config[args.urating_model]
         urParam['input_shape'] = user_size
+        print(urParam)
         uratingModel = availableURatingModels[args.urating_model](**urParam).to(device)
         # summary(uratingModel, (1, user_size))
     model = theModel(titleModel, posterModel, uratingModel)
@@ -86,23 +87,24 @@ if __name__ == "__main__":
 
     # train
     if args.run_mode == "train" or args.run_mode == "train_test":
-        wandb.login()
-        wandb_logger = WandbLogger(
-            project="movie-genre-prediction",
-            name=args.checkpoint,
-            log_model=True,
-            checkpoint_name=args.checkpoint,
-            # config={
-            #     "title_model": args.title_model,
-            #     "poster_model": args.poster_model,
-            #     "urating_model": args.urating_model,
-            #     "use_dropped_data": args.use_dropped_data,
-            #     "checkoint": args.checkpoint,
-            #     "batch_size": args.batch_size,
-            #     "image_size": args.image_size,
-            #     "max_epochs": args.max_epochs
-            # },
-        )
+        # wandb.init(settings=wandb.Settings(start_method="fork"))
+        # wandb_logger = WandbLogger(
+        #     project="movie-genre-prediction",
+        #     name=args.checkpoint,
+        #     log_model=True,
+        #     checkpoint_name=args.checkpoint,
+        #     # config={
+        #     #     "title_model": args.title_model,
+        #     #     "poster_model": args.poster_model,
+        #     #     "urating_model": args.urating_model,
+        #     #     "use_dropped_data": args.use_dropped_data,
+        #     #     "checkoint": args.checkpoint,
+        #     #     "batch_size": args.batch_size,
+        #     #     "image_size": args.image_size,
+        #     #     "max_epochs": args.max_epochs
+        #     # },
+        # )
+        wandb_logger = None
         cp = pl.callbacks.ModelCheckpoint(
             save_top_k = 1,
             dirpath = args.saved_model_dir,
@@ -112,7 +114,7 @@ if __name__ == "__main__":
             max_epochs=args.max_epochs, 
             default_root_dir=args.saved_model_dir, 
             callbacks=[cp],
-            logger=wandb_logger,
+            # logger=wandb_logger,
         )
         trainer.fit(model, train_dataloader, val_dataloader)
         # if the ckpt file has "-v1" at the end, remove it
