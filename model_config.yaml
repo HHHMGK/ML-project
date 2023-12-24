@@ -13,8 +13,8 @@ TinyVGG:
   num_labels: 18
 
 VGG16:
-  num_classes: 1000
-  batch_norm: False
+  input_shape: 3
+  output_shape: 18
 
 DenseNet121:
   input_shape: 3

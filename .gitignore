@@ -265,3 +265,4 @@ wandb/run-20231224_102503-rzbd11y7/run-rzbd11y7.wandb
 wandb/run-20231224_102503-rzbd11y7/files/config.yaml
 wandb/run-20231224_102739-39ojdpec/run-39ojdpec.wandb
 wandb/run-20231224_102739-39ojdpec/files/config.yaml
+lightning_logs/version_52/hparams.yaml

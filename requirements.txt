@@ -1,3 +1,4 @@
 lightning
 torchsummary
 wandb
+torchinfo
