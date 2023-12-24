@@ -13,6 +13,7 @@ class theModel(pl.LightningModule):
         super(theModel, self).__init__()
         self.num_labesls = num_labels
         self.metric_threshold = metric_threshold
+        self.combine_mode = combine_mode
 
         self.titleModel = titleModel
         self.posterModel = posterModel
