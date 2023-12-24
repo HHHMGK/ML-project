@@ -30,7 +30,7 @@ FNN:
   dec_speed: 8
   use_relu: True
   use_bnorm: False
-  dropout: 0.2
+  dropout: 0.0
   _db_print_layers: False
 
 simpleNN:
