@@ -40,7 +40,8 @@ class theModel(pl.LightningModule):
         if self.combine_mode == 'concat':
             out = torch.cat((Tout, Pout, Uout), dim=1)
         else:
-            out = Tout*0.15 + Pout*0.20 + Uout*0.65
+            # out = Tout*0.15 + Pout*0.20 + Uout*0.65
+            out = Tout*0.05 + Pout*0.15 + Uout*0.8
         out = self.fc(out)
         return out
 
@@ -114,6 +115,36 @@ class LSTM(nn.Module):
         self.num_labesls = num_labels
 
         self.core = nn.LSTM(
+            input_size=self.input_size,
+            hidden_size=self.hidden_size,
+            num_layers=self.num_layers,
+            bidirectional=self.bidirectional
+        )
+        linear_size = self.hidden_size
+        if self.bidirectional:
+            linear_size *= 2
+
+        self.classifier = FNN(linear_size, self.num_labesls, dec_speed=dec_speed, use_relu=True, use_bnorm=True)
+
+    def forward(self, title):
+        Tout, _ = self.core(title)
+        # out = [batch_size, seq_len, hidden_size*bidirectional (vector size)]
+        # => only take the last element (many to one RNN)
+        Tout = Tout[:, -1, :]
+        Tout = self.classifier(Tout)
+        return Tout       
+
+class GRU(nn.Module):
+    def __init__(self, input_size=4071, hidden_size=128, num_layers=2, bidirectional=True, num_labels=18, dec_speed=2) -> None:
+        super(GRU, self).__init__()
+        print('GRU', input_size, hidden_size, num_layers, bidirectional, num_labels)
+        self.input_size = input_size
+        self.hidden_size = hidden_size
+        self.num_layers = num_layers
+        self.bidirectional = bidirectional
+        self.num_labesls = num_labels
+
+        self.core = nn.GRU(
             input_size=self.input_size,
             hidden_size=self.hidden_size,
             num_layers=self.num_layers,

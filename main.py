@@ -9,6 +9,7 @@ from lightning.pytorch.loggers import WandbLogger
 
 availableTitleModels = {
     "LSTM": LSTM,
+    "GRU": GRU,
     "None": None
 }
 availablePosterModels = {

@@ -6,6 +6,14 @@ LSTM:
   num_labels: 18
   dec_speed: 2
 
+GRU:
+  input_size: 4071
+  hidden_size: 128
+  num_layers: 2
+  bidirectional: True
+  num_labels: 18
+  dec_speed: 2
+
 TinyVGG:
   input_shape: 3
   hidden_units: 32
