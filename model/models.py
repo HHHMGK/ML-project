@@ -182,46 +182,56 @@ class TinyVGG(nn.Module):
     
 
 class DenseNet121Model(nn.Module):
-  def __init__(self, input_shape: int, output_shape: int, freeze: bool = False):
+  def __init__(self, input_shape: int, output_shape: int, use_pretrained: bool = False):
     super().__init__()
     print('DenseNet121', input_shape, output_shape)
-    self.model = densenet121(weights=DenseNet121_Weights.DEFAULT)
-    if freeze:
+    if use_pretrained:
+      self.model = densenet121(weights=DenseNet121_Weights.DEFAULT)
       for param in self.model.parameters():
         param.requires_grad = False
-    self.model.classifier = FNN(1024, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
+    else:
+      self.model = densenet121()
+    self.classifier = FNN(1024, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
-    return self.model(x)
+    out = self.model(x)
+    out = self.classifier(out)
+    return out
   
 class DenseNet169Model(nn.Module):
-  def __init__(self, input_shape: int, output_shape: int, freeze: bool = False):
+  def __init__(self, input_shape: int, output_shape: int, use_pretrained: bool = False):
     super().__init__()
     print('DenseNet169', input_shape, output_shape)
-    self.model = densenet169(weights=DenseNet169_Weights.DEFAULT)
-    if freeze:
+    if use_pretrained:
+      self.model = densenet169(weights=DenseNet169_Weights.DEFAULT)
       for param in self.model.parameters():
         param.requires_grad = False
-    self.model.classifier = FNN(1664, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
+    else:
+      self.model = densenet169()
+    self.classifier = FNN(1664, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
-    return self.model(x)
+    out = self.model(x)
+    out = self.classifier(out)
+    return out
 
 class VGG16Model(nn.Module):
-  def __init__(self, input_shape: int, output_shape: int, freeze: bool = False):
+  def __init__(self, input_shape: int, output_shape: int, use_pretrained: bool = False):
     super().__init__()
     print('VGG16', input_shape, output_shape)
-    self.model = vgg16(weights=VGG16_Weights.DEFAULT)
-    if freeze:
+    if use_pretrained:
+      self.model = vgg16(weights=VGG16_Weights.DEFAULT)
       for param in self.model.parameters():
         param.requires_grad = False
-    self.model.classifier = FNN(25088, output_shape, dec_speed=4, use_relu=True)
-
+    else:
+      self.model = vgg16()
+    self.classifier = FNN(25088, output_shape, dec_speed=4, use_relu=True, use_bnorm=True)
 
   def forward(self, x):
-    return self.model(x)
-
-
+    out = self.model(x)
+    out = self.classifier(out)
+    return out
+  
 class simpleNN(nn.Module):
     def __init__(self, input_shape, output_shape, dec_speed=4) -> None:
         super(simpleNN, self).__init__()

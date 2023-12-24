@@ -23,7 +23,7 @@ DenseNet121:
 DenseNet169:
   input_shape: 3
   output_shape: 18
-  freeze: True
+  use_pretrained: True
 
 FNN:
   input_shape: 6040
