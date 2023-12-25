@@ -54,17 +54,6 @@ class theModel(pl.LightningModule):
         self.training_step_output = output, genre_tensor
         return loss
     
-    # def on_train_epoch_end(self):
-    #     output, truth = self.training_step_output
-    #     met = get_metrics(output, truth, self.metric_threshold, self.device)
-    #     self.log('train_f1ma', met[0], on_epoch= True)
-    #     self.log('train_f1mi', met[1], on_epoch= True)
-    #     self.log('train_acc', met[2], on_epoch= True)
-    #     self.log('train_prec', met[3], on_epoch= True)
-    #     self.log('train_rec', met[4], on_epoch= True)
-
-        # self.training_step_output.clear()
-
 
 
     def validation_step(self, val_batch, batch_idx):
