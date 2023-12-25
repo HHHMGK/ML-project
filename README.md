@@ -54,3 +54,5 @@ pip install -r requirements.txt
     ```
 
 #### `test` and `train` can be replaced with `train_test` for automatic testing after training
+
+Notebook file for training and testing models: [ml-project.ipynb]
