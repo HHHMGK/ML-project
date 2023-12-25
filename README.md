@@ -1,5 +1,5 @@
 # ML-project
-Repo for INT3305E Fall 2023 course's project in Predicting Movie genres from poster, title and user rating data.
+Repo for Machine learning course INT3305E, Fall 2023 project in Predicting Movie genres from Title, Poster and User rating data.
 
 # Project structure
 ```
