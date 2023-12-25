@@ -1,4 +1,11 @@
-lightning
-torchsummary
-wandb
-torchinfo
+lightning==2.1.2
+matplotlib==3.8.2
+nltk==3.8.1
+Pillow==10.1.0
+pytorch_lightning==2.1.2
+PyYAML==6.0.1
+scikit_learn==1.3.2
+torch==2.1.2
+torchinfo==1.8.0
+torchmetrics==1.2.1
+torchvision==0.16.2
