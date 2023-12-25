@@ -29,6 +29,7 @@ pip install -r requirements.txt
     ```
     to print the list of arguments and their default values and descriptions.
 
+    To change models hyperparameters, edit `model_config.yaml` file.
 2. Training
 
     To train the models, use
